@@ -6,98 +6,50 @@
 <title>Paper Pulsar — Pipeline Monitor</title>
 <style>
   :root {
-    --bg: #0f1117;
-    --card: #1a1d27;
-    --border: #2a2d3a;
-    --text: #e4e4e7;
-    --dim: #71717a;
-    --accent: #6366f1;
-    --green: #22c55e;
-    --amber: #f59e0b;
-    --red: #ef4444;
-    --blue: #3b82f6;
-    --cyan: #06b6d4;
+    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3a;
+    --text: #e4e4e7; --dim: #71717a; --accent: #6366f1;
+    --green: #22c55e; --amber: #f59e0b; --red: #ef4444;
+    --blue: #3b82f6; --cyan: #06b6d4;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-  }
-  .header {
-    padding: 20px 32px;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header h1 { font-size: 20px; font-weight: 600; letter-spacing: -0.5px; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .header { padding: 20px 32px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 20px; font-weight: 600; }
   .header h1 span { color: var(--accent); }
   .header-right { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--dim); }
-  .refresh-btn {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
-  }
+  .refresh-btn { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
   .refresh-btn:hover { border-color: var(--accent); }
   .refresh-btn.loading { opacity: 0.5; pointer-events: none; }
 
-  #auth-screen {
-    display: flex; align-items: center; justify-content: center;
-    height: 80vh; flex-direction: column; gap: 20px;
-  }
+  #auth-screen { display: flex; align-items: center; justify-content: center; height: 80vh; flex-direction: column; gap: 20px; }
   #auth-screen h2 { font-size: 24px; font-weight: 600; }
   #auth-screen p { color: var(--dim); }
-  .google-btn {
-    background: #fff; color: #333; border: none; padding: 12px 28px;
-    border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer;
-    display: flex; align-items: center; gap: 10px;
-  }
+  .google-btn { background: #fff; color: #333; border: none; padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 10px; }
   .google-btn:hover { transform: scale(1.02); }
   .google-btn svg { width: 20px; height: 20px; }
 
   #dashboard { display: none; padding: 24px 32px; }
-  .grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px; margin-bottom: 24px;
-  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
-  .card-title {
-    font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
-    color: var(--dim); margin-bottom: 12px;
-  }
+  .card-title { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--dim); margin-bottom: 12px; }
   .big-number { font-size: 36px; font-weight: 700; letter-spacing: -1px; line-height: 1; margin-bottom: 4px; }
   .big-number.green { color: var(--green); }
   .big-number.amber { color: var(--amber); }
   .big-number.red { color: var(--red); }
-  .big-number.blue { color: var(--blue); }
-  .big-number.cyan { color: var(--cyan); }
   .sub-text { font-size: 13px; color: var(--dim); margin-top: 4px; }
-
   .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin: 12px 0 8px; }
   .progress-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
-
-  .table-card { grid-column: 1 / -1; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th {
-    text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border);
-    color: var(--dim); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
-  }
-  td { padding: 8px 12px; border-bottom: 1px solid rgba(42,45,58,0.5); }
-  tr:hover td { background: rgba(99,102,241,0.05); }
-  .num-right { text-align: right; font-variant-numeric: tabular-nums; }
-
   .method-row { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
   .method-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .method-label { font-size: 13px; flex: 1; }
   .method-value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
-
-  .snapshot-note {
-    background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.2);
-    border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .snapshot-note strong { color: var(--accent); }
+  .table-card { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--dim); font-weight: 500; font-size: 11px; text-transform: uppercase; }
+  td { padding: 8px 12px; border-bottom: 1px solid rgba(42,45,58,0.5); }
+  .num-right { text-align: right; font-variant-numeric: tabular-nums; }
+  .status-msg { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px 16px; margin-top: 20px; margin-bottom: 8px; font-size: 13px; }
+  .status-msg.error { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); }
 </style>
 </head>
 <body>
@@ -120,11 +72,9 @@
       <button class="refresh-btn" id="refresh-btn" onclick="loadAll()">Refresh</button>
     </div>
   </div>
+  <div id="status-msg" class="status-msg" style="display:none"></div>
 
-  <div id="snapshot-info" class="snapshot-note" style="margin-top:20px"></div>
-
-  <!-- KPI Cards -->
-  <div class="grid">
+  <div class="grid" style="margin-top:16px">
     <div class="card">
       <div class="card-title">Total Papers</div>
       <div class="big-number" id="total-papers">-</div>
@@ -149,7 +99,6 @@
     </div>
   </div>
 
-  <!-- Method + Empty + Pipeline -->
   <div class="grid">
     <div class="card">
       <div class="card-title">Summarization Method</div>
@@ -164,47 +113,30 @@
         <span class="method-value" id="codex-count">-</span>
       </div>
       <div class="progress-bar" style="margin-top:16px">
-        <div id="method-bar" style="height:100%;display:flex;border-radius:4px;overflow:hidden">
+        <div style="height:100%;display:flex;border-radius:4px;overflow:hidden">
           <div id="gemini-bar" style="background:var(--blue);transition:width 0.5s"></div>
           <div id="codex-bar" style="background:var(--cyan);transition:width 0.5s"></div>
         </div>
       </div>
     </div>
     <div class="card">
-      <div class="card-title">Empty Summary (Estimated)</div>
+      <div class="card-title">Empty Summary (Sampled)</div>
       <div class="big-number amber" id="empty-count">-</div>
       <div class="sub-text" id="empty-sub"></div>
     </div>
     <div class="card">
-      <div class="card-title">Codex Pipeline</div>
-      <div id="codex-pipeline-status" style="font-size:14px;line-height:1.8">Loading...</div>
-    </div>
-  </div>
-
-  <!-- TA Table -->
-  <div class="grid">
-    <div class="card table-card">
-      <div class="card-title">TA / Category Breakdown (177 categories, 19 TAs)</div>
-      <table>
-        <thead>
-          <tr><th>TA</th><th class="num-right">Categories</th></tr>
-        </thead>
-        <tbody id="ta-table-body">
-          <tr><td colspan="2" style="color:var(--dim)">Loading...</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- Year + Recent -->
-  <div class="grid">
-    <div class="card">
-      <div class="card-title">Year Distribution (Recent 500 analyzed)</div>
-      <div id="year-chart" style="display:flex;align-items:flex-end;gap:4px;height:120px;padding-top:10px"></div>
-    </div>
-    <div class="card">
       <div class="card-title">Recent Codex Papers</div>
       <div id="recent-codex" style="font-size:13px;line-height:1.8">Loading...</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card table-card">
+      <div class="card-title">TA / Category Breakdown</div>
+      <table>
+        <thead><tr><th>TA</th><th class="num-right">Categories</th></tr></thead>
+        <tbody id="ta-table-body"></tbody>
+      </table>
     </div>
   </div>
 </div>
@@ -212,7 +144,8 @@
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+import { getFirestore, collection, query, where, limit, getDocs, getCountFromServer, doc, getDoc }
+  from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
 
 const app = initializeApp({
   apiKey: "AIzaSyDsckeXh53SS7xXBcAPVFx1bDr6UPYA8PU",
@@ -222,7 +155,6 @@ const app = initializeApp({
   messagingSenderId: "647755999969",
   appId: "1:647755999969:web:7ddd22e7b64b298aa8a5a0",
 });
-
 const auth = getAuth(app);
 const db = getFirestore(app);
 
@@ -232,125 +164,120 @@ window.signIn = async () => {
 };
 
 onAuthStateChanged(auth, (user) => {
+  document.getElementById("auth-screen").style.display = user ? "none" : "flex";
+  document.getElementById("dashboard").style.display = user ? "block" : "none";
   if (user) {
-    document.getElementById("auth-screen").style.display = "none";
-    document.getElementById("dashboard").style.display = "block";
     document.getElementById("user-email").textContent = user.email;
     loadAll();
-  } else {
-    document.getElementById("auth-screen").style.display = "flex";
-    document.getElementById("dashboard").style.display = "none";
   }
 });
 
-const fmt = (n) => typeof n === "number" ? n.toLocaleString() : "-";
+const fmt = n => typeof n === "number" ? n.toLocaleString() : "-";
+const $  = id => document.getElementById(id);
+
+// Simple single-field count — no composite index needed
+async function countStatus(value) {
+  const q = query(collection(db, "papers"), where("status", "==", value));
+  const snap = await getCountFromServer(q);
+  return snap.data().count;
+}
+
+async function countField(field, value) {
+  const q = query(collection(db, "papers"), where(field, "==", value));
+  const snap = await getCountFromServer(q);
+  return snap.data().count;
+}
 
 window.loadAll = async () => {
-  const btn = document.getElementById("refresh-btn");
-  btn.classList.add("loading");
-  btn.textContent = "Loading...";
+  const btn = $("refresh-btn");
+  btn.classList.add("loading"); btn.textContent = "Loading...";
+  $("status-msg").style.display = "none";
 
   try {
-    // Read single stats document
-    const snap = await getDoc(doc(db, "_meta", "pipeline_stats"));
-    if (!snap.exists()) {
-      document.getElementById("snapshot-info").innerHTML =
-        '<strong>No stats found.</strong> Run: <code>py backend/scripts/update_dashboard_stats.py</code>';
-      btn.classList.remove("loading"); btn.textContent = "Refresh";
-      return;
-    }
+    // 1. Counts — all single-field where, no orderBy, no composite index
+    const [analyzed, metadata, failed, codex] = await Promise.all([
+      countStatus("analyzed"),
+      countStatus("metadata"),
+      countStatus("failed"),
+      countField("analyzedBy", "codex-cli"),
+    ]);
 
-    const s = snap.data();
+    const total = analyzed + metadata + failed;
+    const gemini = analyzed - codex;
 
-    // Snapshot time
-    const updated = s.updatedAt?.toDate?.() || new Date(s.updatedAt);
-    const ago = Math.round((Date.now() - updated.getTime()) / 60000);
-    const agoText = ago < 60 ? `${ago}m ago` : ago < 1440 ? `${Math.round(ago/60)}h ago` : `${Math.round(ago/1440)}d ago`;
-    document.getElementById("snapshot-info").innerHTML =
-      `Snapshot from <strong>${updated.toLocaleString("ko-KR")}</strong> (${agoText}) — Update: <code>py backend/scripts/update_dashboard_stats.py</code>`;
+    $("total-papers").textContent = fmt(total);
+    $("total-sub").textContent = "177 categories, 19 TAs";
 
-    // KPI
-    const { total, analyzed, metadata, failed, codex, gemini } = s;
+    $("analyzed-count").textContent = fmt(analyzed);
+    $("analyzed-bar").style.width = (analyzed/total*100) + "%";
+    $("analyzed-sub").textContent = `${(analyzed/total*100).toFixed(1)}% of total`;
 
-    document.getElementById("total-papers").textContent = fmt(total);
-    document.getElementById("total-sub").textContent = "177 categories, 19 TAs";
+    $("metadata-count").textContent = fmt(metadata);
+    $("metadata-bar").style.width = (metadata/total*100) + "%";
+    $("metadata-sub").textContent = `${fmt(metadata)} awaiting summarization`;
 
-    document.getElementById("analyzed-count").textContent = fmt(analyzed);
-    document.getElementById("analyzed-bar").style.width = (analyzed/total*100) + "%";
-    document.getElementById("analyzed-sub").textContent = `${(analyzed/total*100).toFixed(1)}% of total`;
+    $("failed-count").textContent = fmt(failed);
+    $("failed-sub").textContent = `${(failed/total*100).toFixed(1)}% failure rate`;
 
-    document.getElementById("metadata-count").textContent = fmt(metadata);
-    document.getElementById("metadata-bar").style.width = (metadata/total*100) + "%";
-    document.getElementById("metadata-sub").textContent = `${fmt(metadata)} awaiting summarization`;
+    $("gemini-count").textContent = fmt(gemini);
+    $("codex-count").textContent = fmt(codex);
+    $("gemini-bar").style.width = (gemini/analyzed*100) + "%";
+    $("codex-bar").style.width = (codex/analyzed*100) + "%";
 
-    document.getElementById("failed-count").textContent = fmt(failed);
-    document.getElementById("failed-sub").textContent = `${(failed/total*100).toFixed(1)}% failure rate`;
+    // 2. Empty summary — sample 200 analyzed docs (no orderBy = no index)
+    const sampleQ = query(collection(db, "papers"), where("status", "==", "analyzed"), limit(200));
+    const sampleSnap = await getDocs(sampleQ);
+    let empty = 0;
+    sampleSnap.forEach(d => {
+      const s = d.data().summary;
+      if (!s || typeof s !== "object" || !s.en) { empty++; return; }
+      if (typeof s.en === "object" && (!s.en.objective || !s.en.objective.trim())) empty++;
+    });
+    const rate = empty / sampleSnap.size;
+    $("empty-count").textContent = `~${fmt(Math.round(analyzed * rate))}`;
+    $("empty-sub").textContent = `${(rate*100).toFixed(1)}% (sampled ${sampleSnap.size})`;
 
-    // Method
-    document.getElementById("gemini-count").textContent = fmt(gemini);
-    document.getElementById("codex-count").textContent = fmt(codex);
-    document.getElementById("gemini-bar").style.width = (gemini/analyzed*100) + "%";
-    document.getElementById("codex-bar").style.width = (codex/analyzed*100) + "%";
-
-    // Empty
-    document.getElementById("empty-count").textContent = `~${fmt(s.estEmpty)}`;
-    document.getElementById("empty-sub").textContent =
-      `${(s.emptyRate*100).toFixed(1)}% of analyzed (sampled ${s.emptySample})`;
-
-    // Pipeline
-    document.getElementById("codex-pipeline-status").innerHTML = `
-      <div>Uploaded: <strong>${fmt(codex)}</strong> papers</div>
-      <div>Model: <strong>gpt-5.4-mini</strong> ($0)</div>
-      <div>Speed: <strong>~6 min</strong>/batch (50 papers)</div>
-      <div>Throughput: <strong>~500</strong> papers/hr</div>
-    `;
-
-    // TA table
-    const taStats = s.taStats || {};
-    const tbody = document.getElementById("ta-table-body");
-    const sorted = Object.entries(taStats).sort((a,b) => b[1].categories - a[1].categories);
-    tbody.innerHTML = sorted.map(([ta, info]) =>
-      `<tr><td><strong>${ta}</strong></td><td class="num-right">${info.categories}</td></tr>`
-    ).join("") || '<tr><td colspan="2" style="color:var(--dim)">No data</td></tr>';
-
-    // Year chart
-    const yearDist = s.yearDist || {};
-    const chart = document.getElementById("year-chart");
-    const years = Object.entries(yearDist).sort((a,b) => a[0].localeCompare(b[0]));
-    const maxY = Math.max(...years.map(y => y[1]), 1);
-    chart.innerHTML = years.map(([year, count]) => {
-      const h = Math.max(count / maxY * 100, 4);
-      return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
-        <span style="font-size:11px;color:var(--dim)">${count}</span>
-        <div style="width:100%;height:${h}px;background:var(--accent);border-radius:3px;min-width:20px"></div>
-        <span style="font-size:11px;color:var(--dim)">${year}</span>
-      </div>`;
-    }).join("") || '<span style="color:var(--dim)">No data</span>';
-
-    // Recent codex
-    const el = document.getElementById("recent-codex");
-    const rc = s.recentCodex || [];
-    if (rc.length === 0) {
+    // 3. Recent codex papers — simple where, no orderBy
+    const codexQ = query(collection(db, "papers"), where("analyzedBy", "==", "codex-cli"), limit(5));
+    const codexSnap = await getDocs(codexQ);
+    const el = $("recent-codex");
+    if (codexSnap.empty) {
       el.innerHTML = '<span style="color:var(--dim)">No Codex papers</span>';
     } else {
-      el.innerHTML = rc.map(p =>
-        `<div style="margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border)">
-          <div style="font-size:13px">${(p.title || "").substring(0, 60)}...</div>
-          <div style="color:var(--dim);font-size:11px">PMID: ${p.pmid} | CR: ${p.clinicalRelevance} | ${p.studyType || "-"}</div>
-        </div>`
-      ).join("");
+      let html = "";
+      codexSnap.forEach(d => {
+        const data = d.data();
+        html += `<div style="margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--border)">
+          <div style="font-size:12px">${(data.title||"").substring(0,55)}...</div>
+          <div style="color:var(--dim);font-size:11px">PMID:${d.id} | CR:${data.clinicalRelevance||"-"} | ${data.studyType||"-"}</div>
+        </div>`;
+      });
+      el.innerHTML = html;
     }
 
-    document.getElementById("last-updated").textContent = `Loaded: ${new Date().toLocaleTimeString("ko-KR")}`;
+    // 4. TA table (static — categories_seed structure)
+    const tas = [
+      ["Oncology",24],["Rare",20],["Infectious Disease",16],["Hematology",15],
+      ["Neurology",12],["CV",11],["Immunology",11],["Pediatrics",8],["Psychiatry",8],
+      ["Metabolic",7],["Gastroenterology",7],["Nephrology",7],["Dermatology",6],
+      ["Ophthalmology",6],["Respiratory",6],["Womens Health",5],["Pain",3],
+      ["Transplant",3],["Musculoskeletal",2]
+    ];
+    $("ta-table-body").innerHTML = tas.map(([ta,c]) =>
+      `<tr><td><strong>${ta}</strong></td><td class="num-right">${c}</td></tr>`
+    ).join("");
+
+    $("last-updated").textContent = `Live | ${new Date().toLocaleTimeString("ko-KR")}`;
 
   } catch(e) {
     console.error("Load error:", e);
-    document.getElementById("snapshot-info").innerHTML =
-      `<strong style="color:var(--red)">Error:</strong> ${e.message}`;
+    const msg = $("status-msg");
+    msg.style.display = "block";
+    msg.className = "status-msg error";
+    msg.textContent = "Error: " + e.message;
   }
 
-  btn.classList.remove("loading");
-  btn.textContent = "Refresh";
+  btn.classList.remove("loading"); btn.textContent = "Refresh";
 };
 </script>
 </body>
