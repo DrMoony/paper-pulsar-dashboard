@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Pulsar — Pipeline Monitor</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e4e4e7;
+    --dim: #71717a;
+    --accent: #6366f1;
+    --green: #22c55e;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --blue: #3b82f6;
+    --cyan: #06b6d4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .header {
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .header h1 span { color: var(--accent); }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--dim);
+  }
+  .refresh-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: border-color 0.2s;
+  }
+  .refresh-btn:hover { border-color: var(--accent); }
+  .refresh-btn.loading { opacity: 0.5; pointer-events: none; }
+
+  /* Auth */
+  #auth-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #auth-screen h2 { font-size: 24px; font-weight: 600; }
+  #auth-screen p { color: var(--dim); }
+  .google-btn {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.1s;
+  }
+  .google-btn:hover { transform: scale(1.02); }
+  .google-btn svg { width: 20px; height: 20px; }
+
+  /* Dashboard */
+  #dashboard { display: none; padding: 24px 32px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dim);
+    margin-bottom: 12px;
+  }
+  .big-number {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .big-number.green { color: var(--green); }
+  .big-number.amber { color: var(--amber); }
+  .big-number.red { color: var(--red); }
+  .big-number.blue { color: var(--blue); }
+  .big-number.cyan { color: var(--cyan); }
+  .sub-text {
+    font-size: 13px;
+    color: var(--dim);
+    margin-top: 4px;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 12px 0 8px;
+  }
+  .progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+
+  /* Table */
+  .table-card { grid-column: 1 / -1; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--dim);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(42,45,58,0.5);
+  }
+  tr:hover td { background: rgba(99,102,241,0.05); }
+  .bar-cell {
+    position: relative;
+    min-width: 120px;
+  }
+  .bar-bg {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    right: 12px;
+    height: calc(100% - 8px);
+    border-radius: 3px;
+    opacity: 0.15;
+  }
+  .num-right { text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Method breakdown */
+  .method-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .method-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .method-label { font-size: 13px; flex: 1; }
+  .method-value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Auth Screen -->
+<div id="auth-screen">
+  <h2>Paper Pulsar Monitor</h2>
+  <p>Firebase 로그인이 필요합니다</p>
+  <button class="google-btn" onclick="signIn()">
+    <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+    Google로 로그인
+  </button>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard">
+  <div class="header">
+    <h1>Paper <span>Pulsar</span> Monitor</h1>
+    <div class="header-right">
+      <span id="last-updated"></span>
+      <span id="user-email" style="color:var(--green)"></span>
+      <button class="refresh-btn" id="refresh-btn" onclick="loadAll()">Refresh</button>
+    </div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div class="grid" style="margin-top:20px">
+    <div class="card">
+      <div class="card-title">Total Papers</div>
+      <div class="big-number" id="total-papers">-</div>
+      <div class="sub-text" id="total-sub"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Analyzed (Summarized)</div>
+      <div class="big-number green" id="analyzed-count">-</div>
+      <div class="progress-bar"><div class="progress-fill" id="analyzed-bar" style="width:0;background:var(--green)"></div></div>
+      <div class="sub-text" id="analyzed-sub"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Metadata (Pending)</div>
+      <div class="big-number amber" id="metadata-count">-</div>
+      <div class="progress-bar"><div class="progress-fill" id="metadata-bar" style="width:0;background:var(--amber)"></div></div>
+      <div class="sub-text" id="metadata-sub"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Failed</div>
+      <div class="big-number red" id="failed-count">-</div>
+      <div class="sub-text" id="failed-sub"></div>
+    </div>
+  </div>
+
+  <!-- Method breakdown + Empty summary -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">Summarization Method</div>
+      <div class="method-row">
+        <div class="method-dot" style="background:var(--blue)"></div>
+        <span class="method-label">Gemini Flash-Lite</span>
+        <span class="method-value" id="gemini-count">-</span>
+      </div>
+      <div class="method-row">
+        <div class="method-dot" style="background:var(--cyan)"></div>
+        <span class="method-label">Codex CLI ($0)</span>
+        <span class="method-value" id="codex-count">-</span>
+      </div>
+      <div class="progress-bar" style="margin-top:16px">
+        <div id="method-bar" style="height:100%;display:flex;border-radius:4px;overflow:hidden">
+          <div id="gemini-bar" style="background:var(--blue);transition:width 0.5s"></div>
+          <div id="codex-bar" style="background:var(--cyan);transition:width 0.5s"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Empty Summary (Estimated)</div>
+      <div class="big-number amber" id="empty-count">-</div>
+      <div class="sub-text" id="empty-sub">analyzed but missing summary content</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Codex Pipeline</div>
+      <div id="codex-pipeline-status" style="font-size:14px;line-height:1.8">Loading...</div>
+    </div>
+  </div>
+
+  <!-- TA Table -->
+  <div class="grid">
+    <div class="card table-card">
+      <div class="card-title">TA / Category Breakdown (177 categories, 19 TAs)</div>
+      <table>
+        <thead>
+          <tr>
+            <th>TA</th>
+            <th class="num-right">Categories</th>
+            <th class="num-right">Analyzed</th>
+            <th class="num-right">Metadata</th>
+            <th class="num-right">Total</th>
+            <th style="width:150px">Coverage</th>
+          </tr>
+        </thead>
+        <tbody id="ta-table-body">
+          <tr><td colspan="6" style="color:var(--dim)">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Recent Activity -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">Year Distribution (Recent 500 analyzed)</div>
+      <div id="year-chart" style="display:flex;align-items:flex-end;gap:4px;height:120px;padding-top:10px"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Recent Codex Papers (latest 5)</div>
+      <div id="recent-codex" style="font-size:13px;line-height:1.8">Loading...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+import { getFirestore, collection, query, where, orderBy, limit, getDocs, getCountFromServer } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDsckeXh53SS7xXBcAPVFx1bDr6UPYA8PU",
+  authDomain: "paper-pulsar.firebaseapp.com",
+  projectId: "paper-pulsar",
+  storageBucket: "paper-pulsar.firebasestorage.app",
+  messagingSenderId: "647755999969",
+  appId: "1:647755999969:web:7ddd22e7b64b298aa8a5a0",
+  measurementId: "G-0KG5MDYQ27"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// Make available globally
+window._db = db;
+window._auth = auth;
+window._imports = { collection, query, where, orderBy, limit, getDocs, getCountFromServer };
+
+window.signIn = async function() {
+  try {
+    await signInWithPopup(auth, new GoogleAuthProvider());
+  } catch(e) {
+    console.error("Auth error:", e);
+    alert("Login failed: " + e.message);
+  }
+};
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    document.getElementById("auth-screen").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
+    document.getElementById("user-email").textContent = user.email;
+    loadAll();
+  } else {
+    document.getElementById("auth-screen").style.display = "flex";
+    document.getElementById("dashboard").style.display = "none";
+  }
+});
+
+const fmt = (n) => (typeof n === 'number' ? n.toLocaleString() : '-');
+
+async function countWhere(field, value) {
+  const q = query(collection(db, "papers"), where(field, "==", value));
+  const snap = await getCountFromServer(q);
+  return snap.data().count;
+}
+
+window.loadAll = async function() {
+  const btn = document.getElementById("refresh-btn");
+  btn.classList.add("loading");
+  btn.textContent = "Loading...";
+
+  try {
+    // 1. Status counts (parallel)
+    const [analyzed, metadata, failed, codex] = await Promise.all([
+      countWhere("status", "analyzed"),
+      countWhere("status", "metadata"),
+      countWhere("status", "failed"),
+      countWhere("analyzedBy", "codex-cli"),
+    ]);
+
+    const total = analyzed + metadata + failed;
+    const gemini = analyzed - codex;
+
+    document.getElementById("total-papers").textContent = fmt(total);
+    document.getElementById("total-sub").textContent = `across 177 categories, 19 TAs`;
+
+    document.getElementById("analyzed-count").textContent = fmt(analyzed);
+    document.getElementById("analyzed-bar").style.width = (analyzed/total*100) + "%";
+    document.getElementById("analyzed-sub").textContent = `${(analyzed/total*100).toFixed(1)}% of total`;
+
+    document.getElementById("metadata-count").textContent = fmt(metadata);
+    document.getElementById("metadata-bar").style.width = (metadata/total*100) + "%";
+    document.getElementById("metadata-sub").textContent = `${fmt(metadata)} papers awaiting summarization`;
+
+    document.getElementById("failed-count").textContent = fmt(failed);
+    document.getElementById("failed-sub").textContent = `${(failed/total*100).toFixed(1)}% failure rate`;
+
+    document.getElementById("gemini-count").textContent = fmt(gemini);
+    document.getElementById("codex-count").textContent = fmt(codex);
+    const geminiPct = gemini / analyzed * 100;
+    const codexPct = codex / analyzed * 100;
+    document.getElementById("gemini-bar").style.width = geminiPct + "%";
+    document.getElementById("codex-bar").style.width = codexPct + "%";
+
+    // 2. Empty summary sampling
+    const sampleQ = query(collection(db, "papers"), where("status", "==", "analyzed"), limit(300));
+    const sampleSnap = await getDocs(sampleQ);
+    let empty = 0;
+    sampleSnap.forEach(doc => {
+      const d = doc.data();
+      const s = d.summary;
+      if (!s || typeof s !== 'object' || !s.en) { empty++; return; }
+      const en = s.en;
+      if (typeof en === 'object' && (!en.objective || !en.objective.trim())) empty++;
+      else if (typeof en === 'string' && !en.trim()) empty++;
+    });
+    const emptyRate = empty / sampleSnap.size;
+    const estEmpty = Math.round(analyzed * emptyRate);
+    document.getElementById("empty-count").textContent = `~${fmt(estEmpty)}`;
+    document.getElementById("empty-sub").textContent =
+      `${(emptyRate*100).toFixed(1)}% of analyzed (sampled ${sampleSnap.size})`;
+
+    // 3. TA breakdown — sample-based estimation
+    await loadTATable(analyzed, metadata);
+
+    // 4. Year distribution
+    await loadYearChart();
+
+    // 5. Recent codex papers
+    await loadRecentCodex();
+
+    // 6. Pipeline status
+    document.getElementById("codex-pipeline-status").innerHTML = `
+      <div>Uploaded: <strong>${fmt(codex)}</strong> papers</div>
+      <div>Method: <strong>gpt-5.4-mini</strong> ($0 subscription)</div>
+      <div>Batch size: <strong>50</strong> papers/batch</div>
+      <div>Speed: <strong>~6 min</strong>/batch (~500/hr)</div>
+    `;
+
+    document.getElementById("last-updated").textContent =
+      `Updated: ${new Date().toLocaleTimeString('ko-KR')}`;
+
+  } catch(e) {
+    console.error("Load error:", e);
+    alert("Error loading data: " + e.message);
+  }
+
+  btn.classList.remove("loading");
+  btn.textContent = "Refresh";
+};
+
+async function loadTATable(totalAnalyzed, totalMeta) {
+  // TA list with category counts (hardcoded from categories_seed.json structure)
+  const tas = [
+    {ta:"Oncology",cats:24},{ta:"Rare",cats:20},{ta:"Infectious Disease",cats:16},
+    {ta:"Hematology",cats:15},{ta:"Neurology",cats:12},{ta:"CV",cats:11},
+    {ta:"Immunology",cats:11},{ta:"Pediatrics",cats:8},{ta:"Psychiatry",cats:8},
+    {ta:"Metabolic",cats:7},{ta:"Gastroenterology",cats:7},{ta:"Nephrology",cats:7},
+    {ta:"Dermatology",cats:6},{ta:"Ophthalmology",cats:6},{ta:"Respiratory",cats:6},
+    {ta:"Womens Health",cats:5},{ta:"Pain",cats:3},{ta:"Transplant",cats:3},
+    {ta:"Musculoskeletal",cats:2}
+  ];
+
+  // Query per-TA counts (sample first TA to check if ta field exists)
+  const tbody = document.getElementById("ta-table-body");
+  let rows = "";
+
+  // Parallel count queries for each TA
+  const promises = tas.map(async (t) => {
+    try {
+      const [a, m] = await Promise.all([
+        countWhere("therapeuticArea", t.ta).catch(() => 0),
+        (async () => {
+          const q2 = query(collection(db, "papers"),
+            where("therapeuticArea", "==", t.ta),
+            where("status", "==", "metadata"));
+          const snap = await getCountFromServer(q2);
+          return snap.data().count;
+        })().catch(() => 0),
+      ]);
+      const total = a > 0 ? a : 0;
+      // If ta field doesn't exist, analyzed count = total count from that query
+      return { ...t, analyzed: a - m, metadata: m, total: a };
+    } catch {
+      return { ...t, analyzed: 0, metadata: 0, total: 0 };
+    }
+  });
+
+  const results = await Promise.all(promises);
+  const maxTotal = Math.max(...results.map(r => r.total), 1);
+
+  for (const r of results) {
+    const pct = r.total > 0 ? (r.analyzed / r.total * 100) : 0;
+    const barW = r.total / maxTotal * 100;
+    rows += `<tr>
+      <td><strong>${r.ta}</strong></td>
+      <td class="num-right">${r.cats}</td>
+      <td class="num-right">${fmt(r.analyzed)}</td>
+      <td class="num-right">${fmt(r.metadata)}</td>
+      <td class="num-right">${fmt(r.total)}</td>
+      <td class="bar-cell">
+        <div class="bar-bg" style="background:var(--green);width:${barW}%"></div>
+        <span style="position:relative">${pct.toFixed(0)}%</span>
+      </td>
+    </tr>`;
+  }
+  tbody.innerHTML = rows || '<tr><td colspan="6" style="color:var(--dim)">No TA data available</td></tr>';
+}
+
+async function loadYearChart() {
+  const q2 = query(collection(db, "papers"), where("status", "==", "analyzed"),
+    orderBy("pubDate", "desc"), limit(500));
+  const snap = await getDocs(q2);
+  const years = {};
+  snap.forEach(doc => {
+    const pd = doc.data().pubDate || "";
+    const y = String(pd).substring(0, 4);
+    if (/^\d{4}$/.test(y)) years[y] = (years[y] || 0) + 1;
+  });
+
+  const chart = document.getElementById("year-chart");
+  const sorted = Object.entries(years).sort((a,b) => a[0].localeCompare(b[0]));
+  const maxY = Math.max(...sorted.map(s => s[1]), 1);
+
+  chart.innerHTML = sorted.map(([year, count]) => {
+    const h = Math.max(count / maxY * 100, 4);
+    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px">
+      <span style="font-size:11px;color:var(--dim)">${count}</span>
+      <div style="width:100%;height:${h}px;background:var(--accent);border-radius:3px;min-width:20px"></div>
+      <span style="font-size:11px;color:var(--dim)">${year}</span>
+    </div>`;
+  }).join("");
+}
+
+async function loadRecentCodex() {
+  const q3 = query(collection(db, "papers"), where("analyzedBy", "==", "codex-cli"),
+    orderBy("analyzedAt", "desc"), limit(5));
+  const snap = await getDocs(q3);
+  const el = document.getElementById("recent-codex");
+
+  if (snap.empty) {
+    el.innerHTML = '<span style="color:var(--dim)">No Codex papers yet</span>';
+    return;
+  }
+
+  let html = "";
+  snap.forEach(doc => {
+    const d = doc.data();
+    const title = (d.title || "Untitled").substring(0, 60);
+    const cr = d.clinicalRelevance || "-";
+    const st = d.studyType || "-";
+    html += `<div style="margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border)">
+      <div style="color:var(--text);font-size:13px">${title}...</div>
+      <div style="color:var(--dim);font-size:11px">PMID: ${doc.id} | CR: ${cr} | ${st}</div>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+</script>
+</body>
+</html>
