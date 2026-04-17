@@ -1,284 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paper Pulsar — Pipeline Monitor</title>
+<meta charset="utf-8">
+<title>Paper Pulsar Dashboard</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-  :root {
-    --bg: #0f1117; --card: #1a1d27; --border: #2a2d3a;
-    --text: #e4e4e7; --dim: #71717a; --accent: #6366f1;
-    --green: #22c55e; --amber: #f59e0b; --red: #ef4444;
-    --blue: #3b82f6; --cyan: #06b6d4;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-  .header { padding: 20px 32px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-  .header h1 { font-size: 20px; font-weight: 600; }
-  .header h1 span { color: var(--accent); }
-  .header-right { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--dim); }
-  .refresh-btn { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
-  .refresh-btn:hover { border-color: var(--accent); }
-  .refresh-btn.loading { opacity: 0.5; pointer-events: none; }
-
-  #auth-screen { display: flex; align-items: center; justify-content: center; height: 80vh; flex-direction: column; gap: 20px; }
-  #auth-screen h2 { font-size: 24px; font-weight: 600; }
-  #auth-screen p { color: var(--dim); }
-  .google-btn { background: #fff; color: #333; border: none; padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 10px; }
-  .google-btn:hover { transform: scale(1.02); }
-  .google-btn svg { width: 20px; height: 20px; }
-
-  #dashboard { display: none; padding: 24px 32px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
-  .card-title { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--dim); margin-bottom: 12px; }
-  .big-number { font-size: 36px; font-weight: 700; letter-spacing: -1px; line-height: 1; margin-bottom: 4px; }
-  .big-number.green { color: var(--green); }
-  .big-number.amber { color: var(--amber); }
-  .big-number.red { color: var(--red); }
-  .sub-text { font-size: 13px; color: var(--dim); margin-top: 4px; }
-  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin: 12px 0 8px; }
-  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
-  .method-row { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
-  .method-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-  .method-label { font-size: 13px; flex: 1; }
-  .method-value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
-  .table-card { grid-column: 1 / -1; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--dim); font-weight: 500; font-size: 11px; text-transform: uppercase; }
-  td { padding: 8px 12px; border-bottom: 1px solid rgba(42,45,58,0.5); }
-  .num-right { text-align: right; font-variant-numeric: tabular-nums; }
-  .status-msg { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 12px 16px; margin-top: 20px; margin-bottom: 8px; font-size: 13px; }
-  .status-msg.error { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); }
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#c9d1d9; --muted:#8b949e; --accent:#58a6ff; --green:#3fb950; --yellow:#d29922; --red:#f85149; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+  h1{margin:0;font-size:20px}
+  .updated{color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px;padding:20px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px}
+  h2{margin:0 0 12px;font-size:15px;color:var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border)}
+  th{color:var(--muted);font-weight:500}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .bar{background:#21262d;border-radius:4px;height:6px;overflow:hidden;margin-top:4px}
+  .bar>div{height:100%;background:var(--accent);transition:width .3s}
+  .bar.complete>div{background:var(--green)}
+  .badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:500}
+  .badge.active{background:rgba(63,185,80,.15);color:var(--green)}
+  .badge.done{background:rgba(139,148,158,.2);color:var(--muted)}
+  .badge.error{background:rgba(248,81,73,.15);color:var(--red)}
+  .badge.warn{background:rgba(210,153,34,.15);color:var(--yellow)}
+  .pill{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;background:var(--card);border:1px solid var(--border);border-radius:14px;font-size:12px}
+  .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+  .pill .dot.off{background:var(--red)}
+  .stat{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d}
+  .stat:last-child{border-bottom:0}
+  .stat-num{font-variant-numeric:tabular-nums;font-weight:600}
+  .muted{color:var(--muted);font-size:12px}
+  footer{padding:16px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
 </style>
 </head>
 <body>
+<header>
+  <h1>Paper Pulsar Dashboard</h1>
+  <div class="updated" id="updated">Loading...</div>
+</header>
+<div class="grid" id="grid"></div>
+<footer>Auto-refresh every 60s · Mac mini push every 30 min · <a href="data.json" style="color:var(--accent)">data.json</a></footer>
+<script>
+const fmt = n => n==null?'-':n.toLocaleString();
+const fmtMin = m => { if(m==null||m<=0)return '-'; const h=Math.floor(m/60), mm=m%60; return h?(h+'h '+mm+'m'):(mm+'m'); };
 
-<div id="auth-screen">
-  <h2>Paper Pulsar Monitor</h2>
-  <p>Firebase 로그인이 필요합니다</p>
-  <button class="google-btn" onclick="signIn()">
-    <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-    Google로 로그인
-  </button>
-</div>
+async function load() {
+  const r = await fetch('data.json?t=' + Date.now());
+  const d = await r.json();
+  document.getElementById('updated').textContent = '마지막 업데이트: ' + d.updated_at_kst;
 
-<div id="dashboard">
-  <div class="header">
-    <h1>Paper <span>Pulsar</span> Monitor</h1>
-    <div class="header-right">
-      <span id="last-updated"></span>
-      <span id="user-email" style="color:var(--green)"></span>
-      <button class="refresh-btn" id="refresh-btn" onclick="loadAll()">Refresh</button>
+  const g = document.getElementById('grid');
+  g.innerHTML = '';
+
+  const sys = d.system || {};
+  const sysCard = card('System', `
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+      <span class="pill"><span class="dot${sys.uvicorn_running?'':' off'}"></span>uvicorn</span>
+      <span class="pill"><span class="dot${sys.mlx_lm_running?'':' off'}"></span>mlx_lm.server</span>
     </div>
-  </div>
-  <div id="status-msg" class="status-msg" style="display:none"></div>
+    <div class="stat"><span>Disk</span><span class="stat-num">${sys.disk?(sys.disk.used+'/'+sys.disk.total+' ('+sys.disk.pct+')'):'-'}</span></div>
+  `);
+  g.appendChild(sysCard);
 
-  <div class="grid" style="margin-top:16px">
-    <div class="card">
-      <div class="card-title">Total Papers</div>
-      <div class="big-number" id="total-papers">-</div>
-      <div class="sub-text" id="total-sub"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Analyzed (Summarized)</div>
-      <div class="big-number green" id="analyzed-count">-</div>
-      <div class="progress-bar"><div class="progress-fill" id="analyzed-bar" style="width:0;background:var(--green)"></div></div>
-      <div class="sub-text" id="analyzed-sub"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Metadata (Pending)</div>
-      <div class="big-number amber" id="metadata-count">-</div>
-      <div class="progress-bar"><div class="progress-fill" id="metadata-bar" style="width:0;background:var(--amber)"></div></div>
-      <div class="sub-text" id="metadata-sub"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Failed</div>
-      <div class="big-number red" id="failed-count">-</div>
-      <div class="sub-text" id="failed-sub"></div>
-    </div>
-  </div>
+  const batches = d.codex_batches || [];
+  const active = batches.filter(b => b.active);
+  const recent = batches.filter(b => !b.active && b.pct > 0).sort((a,b)=>parseInt(b.name.slice(1))-parseInt(a.name.slice(1))).slice(0,8);
 
-  <div class="grid">
-    <div class="card">
-      <div class="card-title">Summarization Method</div>
-      <div class="method-row">
-        <div class="method-dot" style="background:var(--blue)"></div>
-        <span class="method-label">Gemini Flash-Lite</span>
-        <span class="method-value" id="gemini-count">-</span>
-      </div>
-      <div class="method-row">
-        <div class="method-dot" style="background:var(--cyan)"></div>
-        <span class="method-label">Codex CLI ($0)</span>
-        <span class="method-value" id="codex-count">-</span>
-      </div>
-      <div class="progress-bar" style="margin-top:16px">
-        <div style="height:100%;display:flex;border-radius:4px;overflow:hidden">
-          <div id="gemini-bar" style="background:var(--blue);transition:width 0.5s"></div>
-          <div id="codex-bar" style="background:var(--cyan);transition:width 0.5s"></div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">Empty Summary (Sampled)</div>
-      <div class="big-number amber" id="empty-count">-</div>
-      <div class="sub-text" id="empty-sub"></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Recent Codex Papers</div>
-      <div id="recent-codex" style="font-size:13px;line-height:1.8">Loading...</div>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="card table-card">
-      <div class="card-title">TA / Category Breakdown</div>
-      <table>
-        <thead><tr><th>TA</th><th class="num-right">Categories</th></tr></thead>
-        <tbody id="ta-table-body"></tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
-import { getFirestore, collection, query, where, limit, getDocs, getCountFromServer, doc, getDoc }
-  from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-
-const app = initializeApp({
-  apiKey: "AIzaSyDsckeXh53SS7xXBcAPVFx1bDr6UPYA8PU",
-  authDomain: "paper-pulsar.firebaseapp.com",
-  projectId: "paper-pulsar",
-  storageBucket: "paper-pulsar.firebasestorage.app",
-  messagingSenderId: "647755999969",
-  appId: "1:647755999969:web:7ddd22e7b64b298aa8a5a0",
-});
-const auth = getAuth(app);
-const db = getFirestore(app);
-
-window.signIn = async () => {
-  try { await signInWithPopup(auth, new GoogleAuthProvider()); }
-  catch(e) { alert("Login failed: " + e.message); }
-};
-
-onAuthStateChanged(auth, (user) => {
-  document.getElementById("auth-screen").style.display = user ? "none" : "flex";
-  document.getElementById("dashboard").style.display = user ? "block" : "none";
-  if (user) {
-    document.getElementById("user-email").textContent = user.email;
-    loadAll();
-  }
-});
-
-const fmt = n => typeof n === "number" ? n.toLocaleString() : "-";
-const $  = id => document.getElementById(id);
-
-// Simple single-field count — no composite index needed
-async function countStatus(value) {
-  const q = query(collection(db, "papers"), where("status", "==", value));
-  const snap = await getCountFromServer(q);
-  return snap.data().count;
-}
-
-async function countField(field, value) {
-  const q = query(collection(db, "papers"), where(field, "==", value));
-  const snap = await getCountFromServer(q);
-  return snap.data().count;
-}
-
-window.loadAll = async () => {
-  const btn = $("refresh-btn");
-  btn.classList.add("loading"); btn.textContent = "Loading...";
-  $("status-msg").style.display = "none";
-
-  try {
-    // 1. Counts — all single-field where, no orderBy, no composite index
-    const [analyzed, metadata, failed, codex] = await Promise.all([
-      countStatus("analyzed"),
-      countStatus("metadata"),
-      countStatus("failed"),
-      countField("analyzedBy", "codex-cli"),
-    ]);
-
-    const total = analyzed + metadata + failed;
-    const gemini = analyzed - codex;
-
-    $("total-papers").textContent = fmt(total);
-    $("total-sub").textContent = "177 categories, 19 TAs";
-
-    $("analyzed-count").textContent = fmt(analyzed);
-    $("analyzed-bar").style.width = (analyzed/total*100) + "%";
-    $("analyzed-sub").textContent = `${(analyzed/total*100).toFixed(1)}% of total`;
-
-    $("metadata-count").textContent = fmt(metadata);
-    $("metadata-bar").style.width = (metadata/total*100) + "%";
-    $("metadata-sub").textContent = `${fmt(metadata)} awaiting summarization`;
-
-    $("failed-count").textContent = fmt(failed);
-    $("failed-sub").textContent = `${(failed/total*100).toFixed(1)}% failure rate`;
-
-    $("gemini-count").textContent = fmt(gemini);
-    $("codex-count").textContent = fmt(codex);
-    $("gemini-bar").style.width = (gemini/analyzed*100) + "%";
-    $("codex-bar").style.width = (codex/analyzed*100) + "%";
-
-    // 2. Empty summary — sample 200 analyzed docs (no orderBy = no index)
-    const sampleQ = query(collection(db, "papers"), where("status", "==", "analyzed"), limit(200));
-    const sampleSnap = await getDocs(sampleQ);
-    let empty = 0;
-    sampleSnap.forEach(d => {
-      const s = d.data().summary;
-      if (!s || typeof s !== "object" || !s.en) { empty++; return; }
-      if (typeof s.en === "object" && (!s.en.objective || !s.en.objective.trim())) empty++;
-    });
-    const rate = empty / sampleSnap.size;
-    $("empty-count").textContent = `~${fmt(Math.round(analyzed * rate))}`;
-    $("empty-sub").textContent = `${(rate*100).toFixed(1)}% (sampled ${sampleSnap.size})`;
-
-    // 3. Recent codex papers — simple where, no orderBy
-    const codexQ = query(collection(db, "papers"), where("analyzedBy", "==", "codex-cli"), limit(5));
-    const codexSnap = await getDocs(codexQ);
-    const el = $("recent-codex");
-    if (codexSnap.empty) {
-      el.innerHTML = '<span style="color:var(--dim)">No Codex papers</span>';
-    } else {
-      let html = "";
-      codexSnap.forEach(d => {
-        const data = d.data();
-        html += `<div style="margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--border)">
-          <div style="font-size:12px">${(data.title||"").substring(0,55)}...</div>
-          <div style="color:var(--dim);font-size:11px">PMID:${d.id} | CR:${data.clinicalRelevance||"-"} | ${data.studyType||"-"}</div>
-        </div>`;
-      });
-      el.innerHTML = html;
-    }
-
-    // 4. TA table (static — categories_seed structure)
-    const tas = [
-      ["Oncology",24],["Rare",20],["Infectious Disease",16],["Hematology",15],
-      ["Neurology",12],["CV",11],["Immunology",11],["Pediatrics",8],["Psychiatry",8],
-      ["Metabolic",7],["Gastroenterology",7],["Nephrology",7],["Dermatology",6],
-      ["Ophthalmology",6],["Respiratory",6],["Womens Health",5],["Pain",3],
-      ["Transplant",3],["Musculoskeletal",2]
-    ];
-    $("ta-table-body").innerHTML = tas.map(([ta,c]) =>
-      `<tr><td><strong>${ta}</strong></td><td class="num-right">${c}</td></tr>`
-    ).join("");
-
-    $("last-updated").textContent = `Live | ${new Date().toLocaleTimeString("ko-KR")}`;
-
-  } catch(e) {
-    console.error("Load error:", e);
-    const msg = $("status-msg");
-    msg.style.display = "block";
-    msg.className = "status-msg error";
-    msg.textContent = "Error: " + e.message;
+  if (active.length) {
+    const rows = active.map(b => `
+      <tr><td><strong>${b.name}</strong> <span class="badge active">running</span></td>
+      <td class="num">${fmt(b.done)}/${fmt(b.total)}<div class="bar"><div style="width:${b.pct}%"></div></div><div class="muted">${b.pct}%</div></td>
+      <td class="num">${b.speed_sec?b.speed_sec.toFixed(1)+'s/p':'-'}</td>
+      <td class="num">${fmtMin(b.eta_min)}</td>
+      <td class="num">${b.errors||0}${b.timeouts?(' <span class="muted">('+b.timeouts+'t)</span>'):''}</td></tr>`).join('');
+    g.appendChild(card('Codex Batches (active, '+active.length+')', `
+      <table><tr><th>Batch</th><th class="num">Progress</th><th class="num">Speed</th><th class="num">ETA</th><th class="num">Errors</th></tr>${rows}</table>`));
   }
 
-  btn.classList.remove("loading"); btn.textContent = "Refresh";
-};
+  if (recent.length) {
+    const rows = recent.map(b => `
+      <tr><td><strong>${b.name}</strong> <span class="badge ${b.pct>=99?'done':'warn'}">${b.pct>=99?'done':'paused'}</span></td>
+      <td class="num">${fmt(b.done)}/${fmt(b.total)}</td>
+      <td class="num">${b.pct}%</td>
+      <td class="num">${b.errors||0}${b.timeouts?(' <span class="muted">('+b.timeouts+'t)</span>'):''}</td></tr>`).join('');
+    g.appendChild(card('Recent Codex Batches', `
+      <table><tr><th>Batch</th><th class="num">Done</th><th class="num">%</th><th class="num">Errors</th></tr>${rows}</table>`));
+  }
+
+  const fs = d.firestore || {};
+  const ss = fs.status || {};
+  const cs = fs.categorySource || {};
+  const total = Object.values(ss).filter(v=>v>=0).reduce((a,b)=>a+b,0);
+  const statusRows = ['analyzed','pending','queued_codex','metadata','skipped','failed','summarizing'].map(k => {
+    const v = ss[k];
+    const pct = v>=0&&total?(v/total*100).toFixed(1):'-';
+    const cls = v<0?'error':k==='failed'&&v>0?'error':k==='pending'&&v>1000?'warn':'';
+    return '<div class="stat"><span>'+k+(cls?(' <span class="badge '+cls+'">'+cls+'</span>'):'')+'</span><span class="stat-num">'+fmt(v)+' <span class="muted">('+pct+'%)</span></span></div>';
+  }).join('');
+  g.appendChild(card('Firestore Status', statusRows));
+
+  const csRows = Object.entries(cs).map(([k,v]) => '<div class="stat"><span>'+k+'</span><span class="stat-num">'+fmt(v)+'</span></div>').join('');
+  g.appendChild(card('categorySource', csRows + '<div class="stat" style="margin-top:8px;border-top:1px solid var(--border);padding-top:12px"><span>categoryReviewNeeded</span><span class="stat-num">'+fmt(fs.reviewNeeded)+'</span></div>'));
+
+  const runs = (d.daily_runs || []).slice().reverse();
+  if (runs.length) {
+    const rows = runs.map(r => `
+      <tr><td>${r.time}</td>
+      <td class="num">${r.analyzed||0}</td>
+      <td class="num">${r.skipped||0}</td>
+      <td class="num">${r.retried||0}</td>
+      <td class="num">${r.failed||0}</td></tr>`).join('');
+    g.appendChild(card('Daily MLX Pipeline (last 10 runs)', `
+      <table><tr><th>Time</th><th class="num">analyzed</th><th class="num">skipped</th><th class="num">retried</th><th class="num">failed</th></tr>${rows}</table>`));
+  } else {
+    g.appendChild(card('Daily MLX Pipeline', '<div class="muted">아직 기록 없음 (다음 cron 03:30 KST)</div>'));
+  }
+}
+
+function card(title, html) {
+  const div = document.createElement('div');
+  div.className = 'card';
+  div.innerHTML = '<h2>'+title+'</h2>'+html;
+  return div;
+}
+
+load();
+setInterval(load, 60000);
 </script>
 </body>
 </html>
