@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-18 14:33:20 KST",
-  "updated_at_iso": "2026-04-18T14:33:20.295895+09:00",
+  "updated_at_kst": "2026-04-18 15:03:25 KST",
+  "updated_at_iso": "2026-04-18T15:03:25.964537+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -93,10 +93,10 @@
     {
       "name": "B17",
       "total": 5000,
-      "done": 3801,
-      "pct": 76.0,
+      "done": 3862,
+      "pct": 77.2,
       "speed_sec": 31.7,
-      "eta_min": 628,
+      "eta_min": 601,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -104,10 +104,10 @@
     {
       "name": "B18",
       "total": 5000,
-      "done": 3835,
-      "pct": 76.7,
-      "speed_sec": 33.3,
-      "eta_min": 673,
+      "done": 3889,
+      "pct": 77.8,
+      "speed_sec": 33.5,
+      "eta_min": 647,
       "errors": 3,
       "timeouts": 0,
       "active": true
@@ -115,11 +115,11 @@
     {
       "name": "B19",
       "total": 5000,
-      "done": 3800,
-      "pct": 76.0,
-      "speed_sec": 31.8,
-      "eta_min": 662,
-      "errors": 16,
+      "done": 3858,
+      "pct": 77.2,
+      "speed_sec": 31.3,
+      "eta_min": 599,
+      "errors": 0,
       "timeouts": 3,
       "active": true
     },
@@ -137,11 +137,11 @@
     {
       "name": "B20",
       "total": 3500,
-      "done": 2527,
-      "pct": 72.2,
-      "speed_sec": 27.8,
-      "eta_min": 460,
-      "errors": 3,
+      "done": 2593,
+      "pct": 74.1,
+      "speed_sec": 29.0,
+      "eta_min": 459,
+      "errors": 14,
       "timeouts": 0,
       "active": true
     },
@@ -238,7 +238,7 @@
       "mlx-v53": 0,
       "mlx-v52": 0
     },
-    "reviewNeeded": 34248
+    "reviewNeeded": 34969
   },
   "daily_runs": [],
   "system": {
