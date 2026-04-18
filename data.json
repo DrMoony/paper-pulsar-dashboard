@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-18 11:32:42 KST",
-  "updated_at_iso": "2026-04-18T11:32:42.247739+09:00",
+  "updated_at_kst": "2026-04-18 12:02:48 KST",
+  "updated_at_iso": "2026-04-18T12:02:48.571189+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -93,10 +93,10 @@
     {
       "name": "B17",
       "total": 5000,
-      "done": 3457,
-      "pct": 69.1,
-      "speed_sec": 31.7,
-      "eta_min": 814,
+      "done": 3517,
+      "pct": 70.3,
+      "speed_sec": 32.3,
+      "eta_min": 799,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -104,10 +104,10 @@
     {
       "name": "B18",
       "total": 5000,
-      "done": 3495,
-      "pct": 69.9,
-      "speed_sec": 31.4,
-      "eta_min": 792,
+      "done": 3553,
+      "pct": 71.1,
+      "speed_sec": 31.3,
+      "eta_min": 757,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -115,11 +115,11 @@
     {
       "name": "B19",
       "total": 5000,
-      "done": 3449,
-      "pct": 69.0,
+      "done": 3513,
+      "pct": 70.3,
       "speed_sec": 31.8,
-      "eta_min": 847,
-      "errors": 6,
+      "eta_min": 795,
+      "errors": 9,
       "timeouts": 3,
       "active": true
     },
@@ -137,11 +137,11 @@
     {
       "name": "B20",
       "total": 3500,
-      "done": 2132,
-      "pct": 60.9,
+      "done": 2198,
+      "pct": 62.8,
       "speed_sec": 28.9,
-      "eta_min": 675,
-      "errors": 2,
+      "eta_min": 651,
+      "errors": 3,
       "timeouts": 0,
       "active": true
     },
@@ -225,18 +225,18 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 235099,
-      "pending": 12703,
-      "queued_codex": 3941,
-      "metadata": 385482,
-      "skipped": 4,
+      "analyzed": 247245,
+      "pending": 10596,
+      "queued_codex": 1260,
+      "metadata": 378125,
+      "skipped": 3,
       "failed": 0,
       "summarizing": 1
     },
     "categorySource": {
-      "retag-flash": 230736,
-      "mlx-v53": 1,
-      "mlx-v52": 2
+      "retag-flash": 224266,
+      "mlx-v53": 0,
+      "mlx-v52": 0
     },
     "reviewNeeded": 32206
   },
