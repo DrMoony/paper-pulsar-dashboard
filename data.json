@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-18 15:33:32 KST",
-  "updated_at_iso": "2026-04-18T15:33:32.155382+09:00",
+  "updated_at_kst": "2026-04-18 16:03:37 KST",
+  "updated_at_iso": "2026-04-18T16:03:37.992656+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -93,35 +93,35 @@
     {
       "name": "B17",
       "total": 5000,
-      "done": 3916,
-      "pct": 78.3,
+      "done": 3976,
+      "pct": 79.5,
       "speed_sec": 31.7,
-      "eta_min": 573,
-      "errors": 10,
+      "eta_min": 547,
+      "errors": 13,
       "timeouts": 1,
-      "active": true
+      "active": false
     },
     {
       "name": "B18",
       "total": 5000,
-      "done": 3942,
-      "pct": 78.8,
-      "speed_sec": 33.5,
-      "eta_min": 619,
-      "errors": 3,
+      "done": 3988,
+      "pct": 79.8,
+      "speed_sec": 33.4,
+      "eta_min": 590,
+      "errors": 4,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B19",
       "total": 5000,
-      "done": 3917,
-      "pct": 78.3,
+      "done": 3975,
+      "pct": 79.5,
       "speed_sec": 31.8,
-      "eta_min": 583,
-      "errors": 19,
+      "eta_min": 556,
+      "errors": 20,
       "timeouts": 3,
-      "active": true
+      "active": false
     },
     {
       "name": "B2",
@@ -137,11 +137,55 @@
     {
       "name": "B20",
       "total": 3500,
-      "done": 2655,
-      "pct": 75.9,
-      "speed_sec": 29.0,
-      "eta_min": 435,
-      "errors": 14,
+      "done": 2722,
+      "pct": 77.8,
+      "speed_sec": 27.8,
+      "eta_min": 368,
+      "errors": 3,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B21",
+      "total": 3000,
+      "done": 1,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B22",
+      "total": 3000,
+      "done": 2,
+      "pct": 0.1,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B23",
+      "total": 3000,
+      "done": 1,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B24",
+      "total": 3000,
+      "done": 2,
+      "pct": 0.1,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
       "timeouts": 0,
       "active": true
     },
@@ -238,7 +282,7 @@
       "mlx-v53": 0,
       "mlx-v52": 0
     },
-    "reviewNeeded": 54332
+    "reviewNeeded": 57425
   },
   "daily_runs": [],
   "system": {
