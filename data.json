@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-18 11:02:36 KST",
-  "updated_at_iso": "2026-04-18T11:02:36.501954+09:00",
+  "updated_at_kst": "2026-04-18 11:32:42 KST",
+  "updated_at_iso": "2026-04-18T11:32:42.247739+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -93,10 +93,10 @@
     {
       "name": "B17",
       "total": 5000,
-      "done": 3399,
-      "pct": 68.0,
+      "done": 3457,
+      "pct": 69.1,
       "speed_sec": 31.7,
-      "eta_min": 840,
+      "eta_min": 814,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -104,10 +104,10 @@
     {
       "name": "B18",
       "total": 5000,
-      "done": 3436,
-      "pct": 68.7,
-      "speed_sec": 31.3,
-      "eta_min": 835,
+      "done": 3495,
+      "pct": 69.9,
+      "speed_sec": 31.4,
+      "eta_min": 792,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -115,11 +115,11 @@
     {
       "name": "B19",
       "total": 5000,
-      "done": 3396,
-      "pct": 67.9,
-      "speed_sec": 31.7,
-      "eta_min": 873,
-      "errors": 5,
+      "done": 3449,
+      "pct": 69.0,
+      "speed_sec": 31.8,
+      "eta_min": 847,
+      "errors": 6,
       "timeouts": 3,
       "active": true
     },
@@ -137,11 +137,11 @@
     {
       "name": "B20",
       "total": 3500,
-      "done": 2068,
-      "pct": 59.1,
-      "speed_sec": 28.5,
-      "eta_min": 684,
-      "errors": 3,
+      "done": 2132,
+      "pct": 60.9,
+      "speed_sec": 28.9,
+      "eta_min": 675,
+      "errors": 2,
       "timeouts": 0,
       "active": true
     },
@@ -234,7 +234,7 @@
       "summarizing": 1
     },
     "categorySource": {
-      "retag-flash": 232299,
+      "retag-flash": 230736,
       "mlx-v53": 1,
       "mlx-v52": 2
     },
