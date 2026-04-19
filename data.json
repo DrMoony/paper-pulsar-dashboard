@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 17:38:57 KST",
-  "updated_at_iso": "2026-04-19T17:38:57.815382+09:00",
+  "updated_at_kst": "2026-04-19 18:09:04 KST",
+  "updated_at_iso": "2026-04-19T18:09:04.138183+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 413,
-      "pct": 10.3,
-      "speed_sec": 28.7,
-      "eta_min": 1721,
+      "done": 477,
+      "pct": 11.9,
+      "speed_sec": 28.6,
+      "eta_min": 1695,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -203,10 +203,10 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 414,
-      "pct": 10.3,
-      "speed_sec": 28.6,
-      "eta_min": 1714,
+      "done": 476,
+      "pct": 11.9,
+      "speed_sec": 28.7,
+      "eta_min": 1697,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 397,
-      "pct": 9.9,
-      "speed_sec": 29.8,
-      "eta_min": 1815,
+      "done": 457,
+      "pct": 11.4,
+      "speed_sec": 30.0,
+      "eta_min": 1773,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,10 +225,10 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 263,
-      "pct": 7.5,
-      "speed_sec": 28.4,
-      "eta_min": 1541,
+      "done": 322,
+      "pct": 9.2,
+      "speed_sec": 29.0,
+      "eta_min": 1545,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -313,20 +313,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 255015,
-      "pending": 10740,
+      "analyzed": 255037,
+      "pending": 10717,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 19,
+      "skipped": 20,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 199,
+      "mlx-v53": 221,
       "mlx-v52": 0
     },
-    "reviewNeeded": 36979
+    "reviewNeeded": 36990
   },
   "daily_runs": [],
   "system": {
