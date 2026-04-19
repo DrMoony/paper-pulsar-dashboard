@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-20 03:41:14 KST",
-  "updated_at_iso": "2026-04-20T03:41:14.643200+09:00",
+  "updated_at_kst": "2026-04-20 04:11:22 KST",
+  "updated_at_iso": "2026-04-20T04:11:22.346166+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 1681,
-      "pct": 42.0,
-      "speed_sec": 28.6,
-      "eta_min": 1119,
+      "done": 1747,
+      "pct": 43.7,
+      "speed_sec": 28.5,
+      "eta_min": 1094,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -203,10 +203,10 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 1675,
-      "pct": 41.9,
+      "done": 1740,
+      "pct": 43.5,
       "speed_sec": 28.7,
-      "eta_min": 1123,
+      "eta_min": 1099,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 1640,
-      "pct": 41.0,
-      "speed_sec": 29.3,
-      "eta_min": 1172,
+      "done": 1705,
+      "pct": 42.6,
+      "speed_sec": 29.2,
+      "eta_min": 1120,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,10 +225,10 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 1525,
-      "pct": 43.6,
-      "speed_sec": 28.7,
-      "eta_min": 955,
+      "done": 1592,
+      "pct": 45.5,
+      "speed_sec": 28.6,
+      "eta_min": 931,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -313,20 +313,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 257598,
-      "pending": 10594,
+      "analyzed": 257615,
+      "pending": 10576,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 54,
+      "skipped": 55,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 528,
+      "mlx-v53": 545,
       "mlx-v52": 0
     },
-    "reviewNeeded": 37135
+    "reviewNeeded": 37146
   },
   "daily_runs": [],
   "system": {
