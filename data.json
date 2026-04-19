@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 21:39:50 KST",
-  "updated_at_iso": "2026-04-19T21:39:50.570648+09:00",
+  "updated_at_kst": "2026-04-19 22:09:56 KST",
+  "updated_at_iso": "2026-04-19T22:09:56.870398+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,21 +192,21 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 925,
-      "pct": 23.1,
-      "speed_sec": 28.4,
-      "eta_min": 1466,
-      "errors": 0,
-      "timeouts": 0,
+      "done": 981,
+      "pct": 24.5,
+      "speed_sec": 28.5,
+      "eta_min": 1451,
+      "errors": 1,
+      "timeouts": 1,
       "active": true
     },
     {
       "name": "B26",
       "total": 4000,
-      "done": 917,
-      "pct": 22.9,
-      "speed_sec": 28.7,
-      "eta_min": 1484,
+      "done": 974,
+      "pct": 24.3,
+      "speed_sec": 28.8,
+      "eta_min": 1465,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 891,
-      "pct": 22.3,
-      "speed_sec": 29.6,
-      "eta_min": 1553,
+      "done": 956,
+      "pct": 23.9,
+      "speed_sec": 29.4,
+      "eta_min": 1496,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,10 +225,10 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 763,
-      "pct": 21.8,
-      "speed_sec": 28.7,
-      "eta_min": 1317,
+      "done": 824,
+      "pct": 23.5,
+      "speed_sec": 28.8,
+      "eta_min": 1298,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -313,8 +313,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 255149,
-      "pending": 10809,
+      "analyzed": 255167,
+      "pending": 10791,
       "queued_codex": 127,
       "metadata": 371688,
       "skipped": 34,
@@ -323,10 +323,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 333,
+      "mlx-v53": 351,
       "mlx-v52": 0
     },
-    "reviewNeeded": 37061
+    "reviewNeeded": 37064
   },
   "daily_runs": [],
   "system": {
