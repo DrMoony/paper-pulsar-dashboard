@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 15:38:31 KST",
-  "updated_at_iso": "2026-04-19T15:38:31.820472+09:00",
+  "updated_at_kst": "2026-04-19 16:08:38 KST",
+  "updated_at_iso": "2026-04-19T16:08:38.803231+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 160,
-      "pct": 4.0,
-      "speed_sec": 29.2,
-      "eta_min": 1872,
+      "done": 220,
+      "pct": 5.5,
+      "speed_sec": 29.1,
+      "eta_min": 1846,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -203,10 +203,10 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 164,
-      "pct": 4.1,
-      "speed_sec": 28.3,
-      "eta_min": 1817,
+      "done": 225,
+      "pct": 5.6,
+      "speed_sec": 28.4,
+      "eta_min": 1798,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 155,
-      "pct": 3.9,
-      "speed_sec": 29.9,
-      "eta_min": 1922,
+      "done": 212,
+      "pct": 5.3,
+      "speed_sec": 30.3,
+      "eta_min": 1919,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,12 +225,12 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 11,
-      "pct": 0.3,
-      "speed_sec": null,
-      "eta_min": null,
+      "done": 70,
+      "pct": 2.0,
+      "speed_sec": 28.0,
+      "eta_min": 1612,
       "errors": 0,
-      "timeouts": 0,
+      "timeouts": 1,
       "active": true
     },
     {
@@ -313,20 +313,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 254928,
-      "pending": 10831,
+      "analyzed": 254951,
+      "pending": 10805,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 10,
+      "skipped": 13,
       "failed": 5,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 112,
+      "mlx-v53": 135,
       "mlx-v52": 0
     },
-    "reviewNeeded": 36910
+    "reviewNeeded": 36930
   },
   "daily_runs": [],
   "system": {
