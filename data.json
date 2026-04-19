@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-20 01:40:46 KST",
-  "updated_at_iso": "2026-04-20T01:40:46.207603+09:00",
+  "updated_at_kst": "2026-04-20 02:10:54 KST",
+  "updated_at_iso": "2026-04-20T02:10:54.543552+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 1414,
-      "pct": 35.4,
-      "speed_sec": 28.9,
-      "eta_min": 1252,
+      "done": 1481,
+      "pct": 37.0,
+      "speed_sec": 28.8,
+      "eta_min": 1224,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -203,10 +203,10 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 1408,
-      "pct": 35.2,
-      "speed_sec": 29.0,
-      "eta_min": 1256,
+      "done": 1472,
+      "pct": 36.8,
+      "speed_sec": 28.9,
+      "eta_min": 1230,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 1372,
-      "pct": 34.3,
-      "speed_sec": 29.8,
-      "eta_min": 1315,
+      "done": 1441,
+      "pct": 36.0,
+      "speed_sec": 29.7,
+      "eta_min": 1285,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,10 +225,10 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 1254,
-      "pct": 35.8,
-      "speed_sec": 29.1,
-      "eta_min": 1091,
+      "done": 1318,
+      "pct": 37.7,
+      "speed_sec": 29.0,
+      "eta_min": 1065,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -313,20 +313,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 257531,
-      "pending": 10665,
+      "analyzed": 257547,
+      "pending": 10645,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 50,
+      "skipped": 54,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 461,
+      "mlx-v53": 477,
       "mlx-v52": 0
     },
-    "reviewNeeded": 37108
+    "reviewNeeded": 37113
   },
   "daily_runs": [],
   "system": {
