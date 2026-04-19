@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 20:39:37 KST",
-  "updated_at_iso": "2026-04-19T20:39:37.319345+09:00",
+  "updated_at_kst": "2026-04-19 21:09:44 KST",
+  "updated_at_iso": "2026-04-19T21:09:44.231296+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B25",
       "total": 4000,
-      "done": 797,
-      "pct": 19.9,
+      "done": 861,
+      "pct": 21.5,
       "speed_sec": 28.5,
-      "eta_min": 1545,
+      "eta_min": 1495,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -203,10 +203,10 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 793,
-      "pct": 19.8,
-      "speed_sec": 28.6,
-      "eta_min": 1549,
+      "done": 855,
+      "pct": 21.4,
+      "speed_sec": 28.7,
+      "eta_min": 1505,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -214,10 +214,10 @@
     {
       "name": "B27",
       "total": 4000,
-      "done": 768,
-      "pct": 19.2,
-      "speed_sec": 29.6,
-      "eta_min": 1605,
+      "done": 830,
+      "pct": 20.8,
+      "speed_sec": 29.5,
+      "eta_min": 1576,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -225,10 +225,10 @@
     {
       "name": "B28",
       "total": 3500,
-      "done": 639,
-      "pct": 18.3,
-      "speed_sec": 28.8,
-      "eta_min": 1392,
+      "done": 698,
+      "pct": 19.9,
+      "speed_sec": 28.9,
+      "eta_min": 1372,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -313,28 +313,28 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 255131,
-      "pending": 10613,
+      "analyzed": 255144,
+      "pending": 10596,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 30,
+      "skipped": 34,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 316,
+      "mlx-v53": 328,
       "mlx-v52": 0
     },
-    "reviewNeeded": 37053
+    "reviewNeeded": 37060
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "51Gi",
-      "pct": "19%"
+      "avail": "54Gi",
+      "pct": "18%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
