@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 13:38:07 KST",
-  "updated_at_iso": "2026-04-19T13:38:07.202169+09:00",
+  "updated_at_kst": "2026-04-19 14:08:12 KST",
+  "updated_at_iso": "2026-04-19T14:08:12.852358+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -148,10 +148,10 @@
     {
       "name": "B21",
       "total": 3000,
-      "done": 2771,
-      "pct": 92.4,
-      "speed_sec": 28.0,
-      "eta_min": 117,
+      "done": 2825,
+      "pct": 94.2,
+      "speed_sec": 28.1,
+      "eta_min": 94,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -269,20 +269,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 254868,
-      "pending": 10896,
+      "analyzed": 254874,
+      "pending": 10888,
       "queued_codex": 127,
       "metadata": 371688,
       "skipped": 10,
-      "failed": 0,
+      "failed": 2,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 52,
+      "mlx-v53": 58,
       "mlx-v52": 0
     },
-    "reviewNeeded": 36880
+    "reviewNeeded": 36882
   },
   "daily_runs": [],
   "system": {
