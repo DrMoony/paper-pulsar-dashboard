@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-19 11:07:33 KST",
-  "updated_at_iso": "2026-04-19T11:07:33.928536+09:00",
+  "updated_at_kst": "2026-04-19 11:37:41 KST",
+  "updated_at_iso": "2026-04-19T11:37:41.097694+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -148,10 +148,10 @@
     {
       "name": "B21",
       "total": 3000,
-      "done": 2463,
-      "pct": 82.1,
+      "done": 2528,
+      "pct": 84.3,
       "speed_sec": 27.9,
-      "eta_min": 256,
+      "eta_min": 232,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -159,10 +159,10 @@
     {
       "name": "B22",
       "total": 3000,
-      "done": 2682,
-      "pct": 89.4,
-      "speed_sec": 25.5,
-      "eta_min": 149,
+      "done": 2746,
+      "pct": 91.5,
+      "speed_sec": 25.6,
+      "eta_min": 128,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -170,10 +170,10 @@
     {
       "name": "B23",
       "total": 3000,
-      "done": 2689,
-      "pct": 89.6,
-      "speed_sec": 25.5,
-      "eta_min": 149,
+      "done": 2755,
+      "pct": 91.8,
+      "speed_sec": 25.6,
+      "eta_min": 107,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -181,10 +181,10 @@
     {
       "name": "B24",
       "total": 3000,
-      "done": 2730,
-      "pct": 91.0,
-      "speed_sec": 25.1,
-      "eta_min": 126,
+      "done": 2798,
+      "pct": 93.3,
+      "speed_sec": 25.2,
+      "eta_min": 105,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -269,20 +269,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 254819,
-      "pending": 10951,
+      "analyzed": 254829,
+      "pending": 10940,
       "queued_codex": 127,
       "metadata": 371688,
-      "skipped": 3,
+      "skipped": 5,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 4,
+      "mlx-v53": 13,
       "mlx-v52": 0
     },
-    "reviewNeeded": 36847
+    "reviewNeeded": 36855
   },
   "daily_runs": [],
   "system": {
