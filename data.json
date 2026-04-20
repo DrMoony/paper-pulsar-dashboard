@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-21 07:47:33 KST",
-  "updated_at_iso": "2026-04-21T07:47:33.228225+09:00",
+  "updated_at_kst": "2026-04-21 08:17:40 KST",
+  "updated_at_iso": "2026-04-21T08:17:40.202582+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -260,9 +260,9 @@
       "total": 5000,
       "done": 1347,
       "pct": 26.9,
-      "speed_sec": 33.1,
-      "eta_min": 2273,
-      "errors": 1,
+      "speed_sec": 34.0,
+      "eta_min": 2307,
+      "errors": 15,
       "timeouts": 0,
       "active": true
     },
@@ -285,7 +285,7 @@
       "speed_sec": 29.2,
       "eta_min": 1991,
       "errors": 3,
-      "timeouts": 0,
+      "timeouts": 1,
       "active": true
     },
     {
