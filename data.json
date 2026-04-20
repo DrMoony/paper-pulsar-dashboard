@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-21 02:16:19 KST",
-  "updated_at_iso": "2026-04-21T02:16:19.587528+09:00",
+  "updated_at_kst": "2026-04-21 02:46:25 KST",
+  "updated_at_iso": "2026-04-21T02:46:25.723454+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -203,13 +203,13 @@
     {
       "name": "B26",
       "total": 4000,
-      "done": 3954,
-      "pct": 98.9,
+      "done": 3998,
+      "pct": 100.0,
       "speed_sec": 32.7,
-      "eta_min": 27,
+      "eta_min": 0,
       "errors": 2,
       "timeouts": 2,
-      "active": true
+      "active": false
     },
     {
       "name": "B27",
