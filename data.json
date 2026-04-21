@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-21 13:18:51 KST",
-  "updated_at_iso": "2026-04-21T13:18:51.221974+09:00",
+  "updated_at_kst": "2026-04-21 13:48:58 KST",
+  "updated_at_iso": "2026-04-21T13:48:58.367424+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -236,10 +236,10 @@
     {
       "name": "B29",
       "total": 5000,
-      "done": 1740,
-      "pct": 34.8,
+      "done": 1791,
+      "pct": 35.8,
       "speed_sec": 39.4,
-      "eta_min": 2159,
+      "eta_min": 2127,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -258,10 +258,10 @@
     {
       "name": "B30",
       "total": 5000,
-      "done": 1716,
-      "pct": 34.3,
-      "speed_sec": 40.5,
-      "eta_min": 2229,
+      "done": 1759,
+      "pct": 35.2,
+      "speed_sec": 40.4,
+      "eta_min": 2193,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -269,23 +269,67 @@
     {
       "name": "B31",
       "total": 5000,
-      "done": 1758,
-      "pct": 35.2,
+      "done": 1799,
+      "pct": 36.0,
       "speed_sec": 41.3,
-      "eta_min": 2240,
-      "errors": 1,
+      "eta_min": 2209,
+      "errors": 2,
       "timeouts": 1,
       "active": true
     },
     {
       "name": "B32",
       "total": 5000,
-      "done": 1805,
-      "pct": 36.1,
-      "speed_sec": 35.0,
-      "eta_min": 1879,
+      "done": 1858,
+      "pct": 37.2,
+      "speed_sec": 34.9,
+      "eta_min": 1847,
       "errors": 0,
       "timeouts": 1,
+      "active": true
+    },
+    {
+      "name": "B33",
+      "total": 5000,
+      "done": 14,
+      "pct": 0.3,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B34",
+      "total": 5000,
+      "done": 11,
+      "pct": 0.2,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 1,
+      "active": true
+    },
+    {
+      "name": "B35",
+      "total": 5000,
+      "done": 16,
+      "pct": 0.3,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B36",
+      "total": 5000,
+      "done": 14,
+      "pct": 0.3,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
       "active": true
     },
     {
@@ -358,9 +402,9 @@
   "firestore": {
     "status": {
       "analyzed": 280079,
-      "pending": 10644,
-      "queued_codex": 0,
-      "metadata": 349326,
+      "pending": 82,
+      "queued_codex": 20000,
+      "metadata": 339888,
       "skipped": 62,
       "failed": 0,
       "summarizing": 0
@@ -377,7 +421,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "53Gi",
+      "avail": "52Gi",
       "pct": "19%"
     },
     "mlx_lm_running": true,
