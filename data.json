@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-21 09:17:53 KST",
-  "updated_at_iso": "2026-04-21T09:17:53.894456+09:00",
+  "updated_at_kst": "2026-04-21 09:48:00 KST",
+  "updated_at_iso": "2026-04-21T09:48:00.831653+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -236,11 +236,11 @@
     {
       "name": "B29",
       "total": 5000,
-      "done": 1376,
-      "pct": 27.5,
-      "speed_sec": 35.3,
-      "eta_min": 2350,
-      "errors": 19,
+      "done": 1430,
+      "pct": 28.6,
+      "speed_sec": 35.6,
+      "eta_min": 2126,
+      "errors": 0,
       "timeouts": 0,
       "active": true
     },
@@ -258,33 +258,33 @@
     {
       "name": "B30",
       "total": 5000,
-      "done": 1359,
-      "pct": 27.2,
-      "speed_sec": 33.6,
-      "eta_min": 2246,
-      "errors": 15,
+      "done": 1412,
+      "pct": 28.2,
+      "speed_sec": 36.5,
+      "eta_min": 2190,
+      "errors": 0,
       "timeouts": 0,
       "active": true
     },
     {
       "name": "B31",
       "total": 5000,
-      "done": 1410,
-      "pct": 28.2,
-      "speed_sec": 35.8,
-      "eta_min": 2383,
-      "errors": 18,
+      "done": 1459,
+      "pct": 29.2,
+      "speed_sec": 37.9,
+      "eta_min": 2244,
+      "errors": 0,
       "timeouts": 0,
       "active": true
     },
     {
       "name": "B32",
       "total": 5000,
-      "done": 1391,
-      "pct": 27.8,
-      "speed_sec": 33.2,
-      "eta_min": 2211,
-      "errors": 23,
+      "done": 1451,
+      "pct": 29.0,
+      "speed_sec": 32.5,
+      "eta_min": 1937,
+      "errors": 0,
       "timeouts": 1,
       "active": true
     },
@@ -377,7 +377,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "48Gi",
+      "avail": "47Gi",
       "pct": "20%"
     },
     "mlx_lm_running": true,
