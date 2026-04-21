@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-21 08:47:47 KST",
-  "updated_at_iso": "2026-04-21T08:47:47.285937+09:00",
+  "updated_at_kst": "2026-04-21 09:17:53 KST",
+  "updated_at_iso": "2026-04-21T09:17:53.894456+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -236,8 +236,8 @@
     {
       "name": "B29",
       "total": 5000,
-      "done": 1366,
-      "pct": 27.3,
+      "done": 1376,
+      "pct": 27.5,
       "speed_sec": 35.3,
       "eta_min": 2350,
       "errors": 19,
@@ -258,8 +258,8 @@
     {
       "name": "B30",
       "total": 5000,
-      "done": 1347,
-      "pct": 26.9,
+      "done": 1359,
+      "pct": 27.2,
       "speed_sec": 33.6,
       "eta_min": 2246,
       "errors": 15,
@@ -269,19 +269,19 @@
     {
       "name": "B31",
       "total": 5000,
-      "done": 1396,
-      "pct": 27.9,
-      "speed_sec": 35.7,
-      "eta_min": 2406,
-      "errors": 17,
+      "done": 1410,
+      "pct": 28.2,
+      "speed_sec": 35.8,
+      "eta_min": 2383,
+      "errors": 18,
       "timeouts": 0,
       "active": true
     },
     {
       "name": "B32",
       "total": 5000,
-      "done": 1376,
-      "pct": 27.5,
+      "done": 1391,
+      "pct": 27.8,
       "speed_sec": 33.2,
       "eta_min": 2211,
       "errors": 23,
@@ -358,8 +358,8 @@
   "firestore": {
     "status": {
       "analyzed": 262308,
-      "pending": 10517,
-      "queued_codex": 127,
+      "pending": 10644,
+      "queued_codex": 0,
       "metadata": 367097,
       "skipped": 62,
       "failed": 0,
@@ -377,7 +377,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "47Gi",
+      "avail": "48Gi",
       "pct": "20%"
     },
     "mlx_lm_running": true,
