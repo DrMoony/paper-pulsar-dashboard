@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-23 04:59:06 KST",
-  "updated_at_iso": "2026-04-23T04:59:06.597055+09:00",
+  "updated_at_kst": "2026-04-23 05:29:14 KST",
+  "updated_at_iso": "2026-04-23T05:29:14.508735+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -236,13 +236,13 @@
     {
       "name": "B29",
       "total": 5000,
-      "done": 4952,
-      "pct": 99.0,
-      "speed_sec": 44.1,
-      "eta_min": 65,
+      "done": 4998,
+      "pct": 100.0,
+      "speed_sec": 43.9,
+      "eta_min": 28,
       "errors": 4,
       "timeouts": 2,
-      "active": true
+      "active": false
     },
     {
       "name": "B3",
@@ -258,10 +258,10 @@
     {
       "name": "B30",
       "total": 5000,
-      "done": 4878,
-      "pct": 97.6,
-      "speed_sec": 44.7,
-      "eta_min": 116,
+      "done": 4929,
+      "pct": 98.6,
+      "speed_sec": 44.6,
+      "eta_min": 78,
       "errors": 2,
       "timeouts": 1,
       "active": true
@@ -291,10 +291,10 @@
     {
       "name": "B33",
       "total": 5000,
-      "done": 3865,
-      "pct": 77.3,
+      "done": 3920,
+      "pct": 78.4,
       "speed_sec": 36.6,
-      "eta_min": 701,
+      "eta_min": 669,
       "errors": 5,
       "timeouts": 4,
       "active": true
@@ -302,10 +302,10 @@
     {
       "name": "B34",
       "total": 5000,
-      "done": 3770,
-      "pct": 75.4,
-      "speed_sec": 37.5,
-      "eta_min": 780,
+      "done": 3824,
+      "pct": 76.5,
+      "speed_sec": 37.4,
+      "eta_min": 748,
       "errors": 10,
       "timeouts": 8,
       "active": true
@@ -313,10 +313,10 @@
     {
       "name": "B35",
       "total": 5000,
-      "done": 3809,
-      "pct": 76.2,
+      "done": 3865,
+      "pct": 77.3,
       "speed_sec": 37.1,
-      "eta_min": 741,
+      "eta_min": 709,
       "errors": 9,
       "timeouts": 9,
       "active": true
@@ -324,10 +324,10 @@
     {
       "name": "B36",
       "total": 5000,
-      "done": 3931,
-      "pct": 78.6,
+      "done": 3984,
+      "pct": 79.7,
       "speed_sec": 36.0,
-      "eta_min": 660,
+      "eta_min": 629,
       "errors": 2,
       "timeouts": 2,
       "active": true
