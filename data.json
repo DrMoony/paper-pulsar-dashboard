@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-22 16:56:00 KST",
-  "updated_at_iso": "2026-04-22T16:56:00.100516+09:00",
+  "updated_at_kst": "2026-04-22 17:26:08 KST",
+  "updated_at_iso": "2026-04-22T17:26:08.307153+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -236,10 +236,10 @@
     {
       "name": "B29",
       "total": 5000,
-      "done": 3990,
-      "pct": 79.8,
-      "speed_sec": 43.4,
-      "eta_min": 751,
+      "done": 4020,
+      "pct": 80.4,
+      "speed_sec": 43.6,
+      "eta_min": 718,
       "errors": 3,
       "timeouts": 2,
       "active": true
@@ -258,10 +258,10 @@
     {
       "name": "B30",
       "total": 5000,
-      "done": 3970,
-      "pct": 79.4,
-      "speed_sec": 43.5,
-      "eta_min": 765,
+      "done": 3998,
+      "pct": 80.0,
+      "speed_sec": 43.8,
+      "eta_min": 733,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -269,10 +269,10 @@
     {
       "name": "B31",
       "total": 5000,
-      "done": 4035,
-      "pct": 80.7,
-      "speed_sec": 43.2,
-      "eta_min": 723,
+      "done": 4070,
+      "pct": 81.4,
+      "speed_sec": 43.3,
+      "eta_min": 689,
       "errors": 6,
       "timeouts": 4,
       "active": true
@@ -280,8 +280,8 @@
     {
       "name": "B32",
       "total": 5000,
-      "done": 4282,
-      "pct": 85.6,
+      "done": 4309,
+      "pct": 86.2,
       "speed_sec": 39.2,
       "eta_min": 473,
       "errors": 4,
@@ -291,21 +291,21 @@
     {
       "name": "B33",
       "total": 5000,
-      "done": 2696,
-      "pct": 53.9,
-      "speed_sec": 36.2,
-      "eta_min": 1415,
-      "errors": 3,
+      "done": 2737,
+      "pct": 54.7,
+      "speed_sec": 36.4,
+      "eta_min": 1394,
+      "errors": 4,
       "timeouts": 4,
       "active": true
     },
     {
       "name": "B34",
       "total": 5000,
-      "done": 2628,
-      "pct": 52.6,
+      "done": 2668,
+      "pct": 53.4,
       "speed_sec": 37.3,
-      "eta_min": 1489,
+      "eta_min": 1459,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -313,19 +313,19 @@
     {
       "name": "B35",
       "total": 5000,
-      "done": 2670,
-      "pct": 53.4,
-      "speed_sec": 36.6,
-      "eta_min": 1433,
-      "errors": 7,
-      "timeouts": 7,
+      "done": 2706,
+      "pct": 54.1,
+      "speed_sec": 36.8,
+      "eta_min": 1411,
+      "errors": 8,
+      "timeouts": 8,
       "active": true
     },
     {
       "name": "B36",
       "total": 5000,
-      "done": 2753,
-      "pct": 55.1,
+      "done": 2799,
+      "pct": 56.0,
       "speed_sec": 35.6,
       "eta_min": 1335,
       "errors": 2,
