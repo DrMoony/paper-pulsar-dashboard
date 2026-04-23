@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-24 00:34:19 KST",
-  "updated_at_iso": "2026-04-24T00:34:19.072412+09:00",
+  "updated_at_kst": "2026-04-24 01:04:27 KST",
+  "updated_at_iso": "2026-04-24T01:04:27.142463+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -335,21 +335,21 @@
     {
       "name": "B37",
       "total": 5000,
-      "done": 1141,
-      "pct": 22.8,
-      "speed_sec": 45.9,
-      "eta_min": 2981,
-      "errors": 2,
+      "done": 1181,
+      "pct": 23.6,
+      "speed_sec": 46.1,
+      "eta_min": 2955,
+      "errors": 3,
       "timeouts": 1,
       "active": true
     },
     {
       "name": "B38",
       "total": 5000,
-      "done": 1071,
-      "pct": 21.4,
-      "speed_sec": 49.0,
-      "eta_min": 3227,
+      "done": 1101,
+      "pct": 22.0,
+      "speed_sec": 49.4,
+      "eta_min": 3213,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -357,10 +357,10 @@
     {
       "name": "B39",
       "total": 5000,
-      "done": 1136,
-      "pct": 22.7,
-      "speed_sec": 45.9,
-      "eta_min": 2984,
+      "done": 1174,
+      "pct": 23.5,
+      "speed_sec": 46.3,
+      "eta_min": 2969,
       "errors": 4,
       "timeouts": 4,
       "active": true
@@ -379,10 +379,10 @@
     {
       "name": "B40",
       "total": 5000,
-      "done": 1182,
-      "pct": 23.6,
-      "speed_sec": 44.4,
-      "eta_min": 2851,
+      "done": 1225,
+      "pct": 24.5,
+      "speed_sec": 44.5,
+      "eta_min": 2816,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -445,20 +445,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 294786,
-      "pending": 1431,
+      "analyzed": 294810,
+      "pending": 1406,
       "queued_codex": 39817,
       "metadata": 305926,
-      "skipped": 93,
+      "skipped": 94,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 1162,
+      "mlx-v53": 1186,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38303
+    "reviewNeeded": 38310
   },
   "daily_runs": [],
   "system": {
