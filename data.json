@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-23 09:30:16 KST",
-  "updated_at_iso": "2026-04-23T09:30:16.614472+09:00",
+  "updated_at_kst": "2026-04-23 10:00:24 KST",
+  "updated_at_iso": "2026-04-23T10:00:24.592101+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -291,10 +291,10 @@
     {
       "name": "B33",
       "total": 5000,
-      "done": 4366,
-      "pct": 87.3,
+      "done": 4416,
+      "pct": 88.3,
       "speed_sec": 36.1,
-      "eta_min": 390,
+      "eta_min": 360,
       "errors": 5,
       "timeouts": 4,
       "active": true
@@ -302,10 +302,10 @@
     {
       "name": "B34",
       "total": 5000,
-      "done": 4264,
-      "pct": 85.3,
-      "speed_sec": 37.0,
-      "eta_min": 461,
+      "done": 4315,
+      "pct": 86.3,
+      "speed_sec": 36.9,
+      "eta_min": 429,
       "errors": 10,
       "timeouts": 8,
       "active": true
@@ -313,10 +313,10 @@
     {
       "name": "B35",
       "total": 5000,
-      "done": 4310,
-      "pct": 86.2,
+      "done": 4356,
+      "pct": 87.1,
       "speed_sec": 36.6,
-      "eta_min": 425,
+      "eta_min": 395,
       "errors": 9,
       "timeouts": 9,
       "active": true
@@ -324,12 +324,45 @@
     {
       "name": "B36",
       "total": 5000,
-      "done": 4415,
-      "pct": 88.3,
+      "done": 4468,
+      "pct": 89.4,
       "speed_sec": 35.7,
-      "eta_min": 357,
+      "eta_min": 327,
       "errors": 3,
       "timeouts": 3,
+      "active": true
+    },
+    {
+      "name": "B37",
+      "total": 5000,
+      "done": 9,
+      "pct": 0.2,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B38",
+      "total": 5000,
+      "done": 8,
+      "pct": 0.2,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B39",
+      "total": 5000,
+      "done": 6,
+      "pct": 0.1,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
       "active": true
     },
     {
@@ -342,6 +375,17 @@
       "errors": 0,
       "timeouts": 0,
       "active": false
+    },
+    {
+      "name": "B40",
+      "total": 5000,
+      "done": 6,
+      "pct": 0.1,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
     },
     {
       "name": "B5",
@@ -403,8 +447,8 @@
     "status": {
       "analyzed": 294645,
       "pending": 82,
-      "queued_codex": 20000,
-      "metadata": 325743,
+      "queued_codex": 39817,
+      "metadata": 305926,
       "skipped": 83,
       "failed": 0,
       "summarizing": 0
