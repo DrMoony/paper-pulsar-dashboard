@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-24 04:05:20 KST",
-  "updated_at_iso": "2026-04-24T04:05:20.795621+09:00",
+  "updated_at_kst": "2026-04-24 04:35:29 KST",
+  "updated_at_iso": "2026-04-24T04:35:29.092834+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -335,10 +335,10 @@
     {
       "name": "B37",
       "total": 5000,
-      "done": 1455,
-      "pct": 29.1,
-      "speed_sec": 44.9,
-      "eta_min": 2654,
+      "done": 1499,
+      "pct": 30.0,
+      "speed_sec": 44.7,
+      "eta_min": 2608,
       "errors": 3,
       "timeouts": 1,
       "active": true
@@ -346,10 +346,10 @@
     {
       "name": "B38",
       "total": 5000,
-      "done": 1357,
-      "pct": 27.1,
-      "speed_sec": 48.1,
-      "eta_min": 2928,
+      "done": 1398,
+      "pct": 28.0,
+      "speed_sec": 48.0,
+      "eta_min": 2878,
       "errors": 2,
       "timeouts": 0,
       "active": true
@@ -357,10 +357,10 @@
     {
       "name": "B39",
       "total": 5000,
-      "done": 1441,
-      "pct": 28.8,
-      "speed_sec": 45.5,
-      "eta_min": 2730,
+      "done": 1483,
+      "pct": 29.7,
+      "speed_sec": 45.2,
+      "eta_min": 2674,
       "errors": 5,
       "timeouts": 4,
       "active": true
@@ -379,10 +379,10 @@
     {
       "name": "B40",
       "total": 5000,
-      "done": 1532,
-      "pct": 30.6,
-      "speed_sec": 42.8,
-      "eta_min": 2498,
+      "done": 1577,
+      "pct": 31.5,
+      "speed_sec": 42.5,
+      "eta_min": 2445,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -445,20 +445,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 294948,
-      "pending": 1261,
+      "analyzed": 294972,
+      "pending": 1236,
       "queued_codex": 39817,
       "metadata": 305926,
-      "skipped": 101,
+      "skipped": 102,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 1324,
+      "mlx-v53": 1348,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38398
+    "reviewNeeded": 38414
   },
   "daily_runs": [],
   "system": {
