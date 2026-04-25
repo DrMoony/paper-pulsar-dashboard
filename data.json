@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-25 18:48:51 KST",
-  "updated_at_iso": "2026-04-25T18:48:51.961813+09:00",
+  "updated_at_kst": "2026-04-25 19:19:02 KST",
+  "updated_at_iso": "2026-04-25T19:19:02.723722+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -335,10 +335,10 @@
     {
       "name": "B37",
       "total": 5000,
-      "done": 4863,
-      "pct": 97.3,
-      "speed_sec": 42.1,
-      "eta_min": 105,
+      "done": 4917,
+      "pct": 98.3,
+      "speed_sec": 42.0,
+      "eta_min": 70,
       "errors": 5,
       "timeouts": 2,
       "active": true
@@ -346,10 +346,10 @@
     {
       "name": "B38",
       "total": 5000,
-      "done": 4510,
-      "pct": 90.2,
-      "speed_sec": 45.4,
-      "eta_min": 378,
+      "done": 4563,
+      "pct": 91.3,
+      "speed_sec": 45.3,
+      "eta_min": 340,
       "errors": 8,
       "timeouts": 3,
       "active": true
@@ -357,10 +357,10 @@
     {
       "name": "B39",
       "total": 5000,
-      "done": 4661,
-      "pct": 93.2,
-      "speed_sec": 43.9,
-      "eta_min": 256,
+      "done": 4709,
+      "pct": 94.2,
+      "speed_sec": 43.8,
+      "eta_min": 219,
       "errors": 6,
       "timeouts": 5,
       "active": true
@@ -390,10 +390,10 @@
     {
       "name": "B41",
       "total": 5000,
-      "done": 3621,
-      "pct": 72.4,
+      "done": 3673,
+      "pct": 73.5,
       "speed_sec": 37.1,
-      "eta_min": 865,
+      "eta_min": 834,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -401,10 +401,10 @@
     {
       "name": "B42",
       "total": 5000,
-      "done": 3650,
-      "pct": 73.0,
+      "done": 3701,
+      "pct": 74.0,
       "speed_sec": 36.7,
-      "eta_min": 827,
+      "eta_min": 796,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -412,10 +412,10 @@
     {
       "name": "B43",
       "total": 5000,
-      "done": 3641,
-      "pct": 72.8,
+      "done": 3691,
+      "pct": 73.8,
       "speed_sec": 36.9,
-      "eta_min": 860,
+      "eta_min": 829,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -423,10 +423,10 @@
     {
       "name": "B44",
       "total": 5000,
-      "done": 3702,
-      "pct": 74.0,
-      "speed_sec": 36.3,
-      "eta_min": 786,
+      "done": 3754,
+      "pct": 75.1,
+      "speed_sec": 36.2,
+      "eta_min": 755,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -509,7 +509,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "34Gi",
+      "avail": "33Gi",
       "pct": "26%"
     },
     "mlx_lm_running": true,
