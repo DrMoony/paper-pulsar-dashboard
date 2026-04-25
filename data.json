@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-25 20:19:23 KST",
-  "updated_at_iso": "2026-04-25T20:19:23.517239+09:00",
+  "updated_at_kst": "2026-04-25 20:49:33 KST",
+  "updated_at_iso": "2026-04-25T20:49:33.237110+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -346,10 +346,10 @@
     {
       "name": "B38",
       "total": 5000,
-      "done": 4665,
-      "pct": 93.3,
-      "speed_sec": 45.0,
-      "eta_min": 263,
+      "done": 4716,
+      "pct": 94.3,
+      "speed_sec": 44.9,
+      "eta_min": 225,
       "errors": 8,
       "timeouts": 3,
       "active": true
@@ -357,10 +357,10 @@
     {
       "name": "B39",
       "total": 5000,
-      "done": 4811,
-      "pct": 96.2,
-      "speed_sec": 43.7,
-      "eta_min": 146,
+      "done": 4858,
+      "pct": 97.2,
+      "speed_sec": 43.6,
+      "eta_min": 109,
       "errors": 6,
       "timeouts": 5,
       "active": true
@@ -390,10 +390,10 @@
     {
       "name": "B41",
       "total": 5000,
-      "done": 3775,
-      "pct": 75.5,
+      "done": 3826,
+      "pct": 76.5,
       "speed_sec": 37.0,
-      "eta_min": 771,
+      "eta_min": 740,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -401,10 +401,10 @@
     {
       "name": "B42",
       "total": 5000,
-      "done": 3803,
-      "pct": 76.1,
+      "done": 3855,
+      "pct": 77.1,
       "speed_sec": 36.7,
-      "eta_min": 734,
+      "eta_min": 703,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -412,10 +412,10 @@
     {
       "name": "B43",
       "total": 5000,
-      "done": 3794,
-      "pct": 75.9,
+      "done": 3844,
+      "pct": 76.9,
       "speed_sec": 36.8,
-      "eta_min": 767,
+      "eta_min": 737,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -423,10 +423,10 @@
     {
       "name": "B44",
       "total": 5000,
-      "done": 3860,
-      "pct": 77.2,
+      "done": 3912,
+      "pct": 78.2,
       "speed_sec": 36.2,
-      "eta_min": 694,
+      "eta_min": 663,
       "errors": 2,
       "timeouts": 2,
       "active": true
