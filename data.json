@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-25 23:20:23 KST",
-  "updated_at_iso": "2026-04-25T23:20:23.855986+09:00",
+  "updated_at_kst": "2026-04-25 23:50:36 KST",
+  "updated_at_iso": "2026-04-25T23:50:36.039475+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -346,13 +346,13 @@
     {
       "name": "B38",
       "total": 5000,
-      "done": 4966,
-      "pct": 99.3,
-      "speed_sec": 44.5,
-      "eta_min": 37,
+      "done": 4993,
+      "pct": 99.9,
+      "speed_sec": 44.4,
+      "eta_min": 0,
       "errors": 8,
       "timeouts": 3,
-      "active": true
+      "active": false
     },
     {
       "name": "B39",
@@ -390,10 +390,10 @@
     {
       "name": "B41",
       "total": 5000,
-      "done": 4079,
-      "pct": 81.6,
+      "done": 4127,
+      "pct": 82.5,
       "speed_sec": 36.9,
-      "eta_min": 584,
+      "eta_min": 553,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -401,10 +401,10 @@
     {
       "name": "B42",
       "total": 5000,
-      "done": 4104,
-      "pct": 82.1,
-      "speed_sec": 36.6,
-      "eta_min": 550,
+      "done": 4151,
+      "pct": 83.0,
+      "speed_sec": 36.7,
+      "eta_min": 519,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -412,10 +412,10 @@
     {
       "name": "B43",
       "total": 5000,
-      "done": 4093,
-      "pct": 81.9,
+      "done": 4144,
+      "pct": 82.9,
       "speed_sec": 36.8,
-      "eta_min": 582,
+      "eta_min": 551,
       "errors": 2,
       "timeouts": 1,
       "active": true
@@ -423,10 +423,10 @@
     {
       "name": "B44",
       "total": 5000,
-      "done": 4167,
-      "pct": 83.3,
+      "done": 4220,
+      "pct": 84.4,
       "speed_sec": 36.1,
-      "eta_min": 512,
+      "eta_min": 481,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -489,8 +489,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 315588,
-      "pending": 27,
+      "analyzed": 315608,
+      "pending": 7,
       "queued_codex": 39708,
       "metadata": 286987,
       "skipped": 149,
@@ -499,10 +499,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 1980,
+      "mlx-v53": 2000,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38684
+    "reviewNeeded": 38694
   },
   "daily_runs": [],
   "system": {
