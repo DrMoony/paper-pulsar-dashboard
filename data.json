@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-25 20:49:33 KST",
-  "updated_at_iso": "2026-04-25T20:49:33.237110+09:00",
+  "updated_at_kst": "2026-04-25 21:19:43 KST",
+  "updated_at_iso": "2026-04-25T21:19:43.193432+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -346,10 +346,10 @@
     {
       "name": "B38",
       "total": 5000,
-      "done": 4716,
-      "pct": 94.3,
-      "speed_sec": 44.9,
-      "eta_min": 225,
+      "done": 4767,
+      "pct": 95.3,
+      "speed_sec": 44.8,
+      "eta_min": 187,
       "errors": 8,
       "timeouts": 3,
       "active": true
@@ -357,10 +357,10 @@
     {
       "name": "B39",
       "total": 5000,
-      "done": 4858,
-      "pct": 97.2,
-      "speed_sec": 43.6,
-      "eta_min": 109,
+      "done": 4908,
+      "pct": 98.2,
+      "speed_sec": 43.5,
+      "eta_min": 73,
       "errors": 6,
       "timeouts": 5,
       "active": true
@@ -390,10 +390,10 @@
     {
       "name": "B41",
       "total": 5000,
-      "done": 3826,
-      "pct": 76.5,
-      "speed_sec": 37.0,
-      "eta_min": 740,
+      "done": 3882,
+      "pct": 77.6,
+      "speed_sec": 36.9,
+      "eta_min": 708,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -401,10 +401,10 @@
     {
       "name": "B42",
       "total": 5000,
-      "done": 3855,
-      "pct": 77.1,
-      "speed_sec": 36.7,
-      "eta_min": 703,
+      "done": 3908,
+      "pct": 78.2,
+      "speed_sec": 36.6,
+      "eta_min": 672,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -412,21 +412,21 @@
     {
       "name": "B43",
       "total": 5000,
-      "done": 3844,
-      "pct": 76.9,
+      "done": 3889,
+      "pct": 77.8,
       "speed_sec": 36.8,
-      "eta_min": 737,
+      "eta_min": 705,
       "errors": 1,
-      "timeouts": 0,
+      "timeouts": 1,
       "active": true
     },
     {
       "name": "B44",
       "total": 5000,
-      "done": 3912,
-      "pct": 78.2,
-      "speed_sec": 36.2,
-      "eta_min": 663,
+      "done": 3964,
+      "pct": 79.3,
+      "speed_sec": 36.1,
+      "eta_min": 632,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -490,7 +490,7 @@
   "firestore": {
     "status": {
       "analyzed": 315509,
-      "pending": 4,
+      "pending": 63,
       "queued_codex": 39708,
       "metadata": 286987,
       "skipped": 149,
