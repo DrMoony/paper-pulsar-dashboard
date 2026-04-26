@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-26 23:01:03 KST",
-  "updated_at_iso": "2026-04-26T23:01:03.467175+09:00",
+  "updated_at_kst": "2026-04-26 23:31:19 KST",
+  "updated_at_iso": "2026-04-26T23:31:19.853217+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -432,6 +432,50 @@
       "active": false
     },
     {
+      "name": "B45",
+      "total": 5000,
+      "done": 27,
+      "pct": 0.5,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B46",
+      "total": 5000,
+      "done": 23,
+      "pct": 0.5,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B47",
+      "total": 5000,
+      "done": 27,
+      "pct": 0.5,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B48",
+      "total": 5000,
+      "done": 23,
+      "pct": 0.5,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
       "name": "B5",
       "total": 119,
       "done": 119,
@@ -489,10 +533,10 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 337394,
-      "pending": 39,
-      "queued_codex": 17934,
-      "metadata": 286987,
+      "analyzed": 342695,
+      "pending": 0,
+      "queued_codex": 20000,
+      "metadata": 268459,
       "skipped": 149,
       "failed": 0,
       "summarizing": 0
@@ -509,7 +553,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "43Gi",
+      "avail": "42Gi",
       "pct": "22%"
     },
     "mlx_lm_running": true,
