@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-26 20:59:44 KST",
-  "updated_at_iso": "2026-04-26T20:59:44.978688+09:00",
+  "updated_at_kst": "2026-04-26 21:29:55 KST",
+  "updated_at_iso": "2026-04-26T21:29:55.755449+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -490,7 +490,7 @@
   "firestore": {
     "status": {
       "analyzed": 335422,
-      "pending": 7,
+      "pending": 19,
       "queued_codex": 19894,
       "metadata": 286987,
       "skipped": 149,
