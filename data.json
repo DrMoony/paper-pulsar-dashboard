@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-27 22:42:57 KST",
-  "updated_at_iso": "2026-04-27T22:42:57.502720+09:00",
+  "updated_at_kst": "2026-04-27 23:13:10 KST",
+  "updated_at_iso": "2026-04-27T23:13:10.589747+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -434,10 +434,10 @@
     {
       "name": "B45",
       "total": 5000,
-      "done": 2298,
-      "pct": 46.0,
+      "done": 2347,
+      "pct": 46.9,
       "speed_sec": 36.7,
-      "eta_min": 1682,
+      "eta_min": 1651,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -445,10 +445,10 @@
     {
       "name": "B46",
       "total": 5000,
-      "done": 2275,
-      "pct": 45.5,
-      "speed_sec": 37.0,
-      "eta_min": 1698,
+      "done": 2321,
+      "pct": 46.4,
+      "speed_sec": 37.1,
+      "eta_min": 1670,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -456,10 +456,10 @@
     {
       "name": "B47",
       "total": 5000,
-      "done": 2302,
-      "pct": 46.0,
+      "done": 2350,
+      "pct": 47.0,
       "speed_sec": 36.6,
-      "eta_min": 1648,
+      "eta_min": 1618,
       "errors": 3,
       "timeouts": 2,
       "active": true
@@ -467,10 +467,10 @@
     {
       "name": "B48",
       "total": 5000,
-      "done": 2295,
-      "pct": 45.9,
+      "done": 2340,
+      "pct": 46.8,
       "speed_sec": 36.8,
-      "eta_min": 1685,
+      "eta_min": 1655,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -533,8 +533,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 343016,
-      "pending": 96,
+      "analyzed": 343039,
+      "pending": 73,
       "queued_codex": 20000,
       "metadata": 268459,
       "skipped": 149,
@@ -543,17 +543,17 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 2065,
+      "mlx-v53": 2088,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38716
+    "reviewNeeded": 38723
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "40Gi",
+      "avail": "39Gi",
       "pct": "23%"
     },
     "mlx_lm_running": true,
