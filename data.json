@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-27 23:13:10 KST",
-  "updated_at_iso": "2026-04-27T23:13:10.589747+09:00",
+  "updated_at_kst": "2026-04-27 23:43:25 KST",
+  "updated_at_iso": "2026-04-27T23:43:25.698124+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -434,10 +434,10 @@
     {
       "name": "B45",
       "total": 5000,
-      "done": 2347,
-      "pct": 46.9,
+      "done": 2394,
+      "pct": 47.9,
       "speed_sec": 36.7,
-      "eta_min": 1651,
+      "eta_min": 1621,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -445,10 +445,10 @@
     {
       "name": "B46",
       "total": 5000,
-      "done": 2321,
-      "pct": 46.4,
-      "speed_sec": 37.1,
-      "eta_min": 1670,
+      "done": 2366,
+      "pct": 47.3,
+      "speed_sec": 37.2,
+      "eta_min": 1641,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -456,8 +456,8 @@
     {
       "name": "B47",
       "total": 5000,
-      "done": 2350,
-      "pct": 47.0,
+      "done": 2397,
+      "pct": 47.9,
       "speed_sec": 36.6,
       "eta_min": 1618,
       "errors": 3,
@@ -467,10 +467,10 @@
     {
       "name": "B48",
       "total": 5000,
-      "done": 2340,
-      "pct": 46.8,
+      "done": 2385,
+      "pct": 47.7,
       "speed_sec": 36.8,
-      "eta_min": 1655,
+      "eta_min": 1627,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -533,8 +533,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 343039,
-      "pending": 73,
+      "analyzed": 343062,
+      "pending": 50,
       "queued_codex": 20000,
       "metadata": 268459,
       "skipped": 149,
@@ -543,17 +543,17 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 2088,
+      "mlx-v53": 2111,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38723
+    "reviewNeeded": 38728
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "39Gi",
+      "avail": "40Gi",
       "pct": "23%"
     },
     "mlx_lm_running": true,
