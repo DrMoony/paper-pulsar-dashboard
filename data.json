@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-27 22:12:46 KST",
-  "updated_at_iso": "2026-04-27T22:12:46.462884+09:00",
+  "updated_at_kst": "2026-04-27 22:42:57 KST",
+  "updated_at_iso": "2026-04-27T22:42:57.502720+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -434,8 +434,8 @@
     {
       "name": "B45",
       "total": 5000,
-      "done": 2249,
-      "pct": 45.0,
+      "done": 2298,
+      "pct": 46.0,
       "speed_sec": 36.7,
       "eta_min": 1682,
       "errors": 1,
@@ -445,10 +445,10 @@
     {
       "name": "B46",
       "total": 5000,
-      "done": 2231,
-      "pct": 44.6,
+      "done": 2275,
+      "pct": 45.5,
       "speed_sec": 37.0,
-      "eta_min": 1726,
+      "eta_min": 1698,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -456,10 +456,10 @@
     {
       "name": "B47",
       "total": 5000,
-      "done": 2252,
-      "pct": 45.0,
+      "done": 2302,
+      "pct": 46.0,
       "speed_sec": 36.6,
-      "eta_min": 1679,
+      "eta_min": 1648,
       "errors": 3,
       "timeouts": 2,
       "active": true
@@ -467,10 +467,10 @@
     {
       "name": "B48",
       "total": 5000,
-      "done": 2245,
-      "pct": 44.9,
-      "speed_sec": 36.7,
-      "eta_min": 1714,
+      "done": 2295,
+      "pct": 45.9,
+      "speed_sec": 36.8,
+      "eta_min": 1685,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -533,8 +533,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 342994,
-      "pending": 118,
+      "analyzed": 343016,
+      "pending": 96,
       "queued_codex": 20000,
       "metadata": 268459,
       "skipped": 149,
@@ -543,10 +543,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 2043,
+      "mlx-v53": 2065,
       "mlx-v52": 0
     },
-    "reviewNeeded": 38706
+    "reviewNeeded": 38716
   },
   "daily_runs": [],
   "system": {
