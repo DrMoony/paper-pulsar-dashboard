@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-27 17:10:20 KST",
-  "updated_at_iso": "2026-04-27T17:10:20.168197+09:00",
+  "updated_at_kst": "2026-04-27 17:40:36 KST",
+  "updated_at_iso": "2026-04-27T17:40:36.497289+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -434,10 +434,10 @@
     {
       "name": "B45",
       "total": 5000,
-      "done": 1763,
-      "pct": 35.3,
-      "speed_sec": 36.5,
-      "eta_min": 1976,
+      "done": 1810,
+      "pct": 36.2,
+      "speed_sec": 36.6,
+      "eta_min": 1950,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -445,10 +445,10 @@
     {
       "name": "B46",
       "total": 5000,
-      "done": 1741,
-      "pct": 34.8,
-      "speed_sec": 36.9,
-      "eta_min": 2032,
+      "done": 1788,
+      "pct": 35.8,
+      "speed_sec": 37.0,
+      "eta_min": 2005,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -456,10 +456,10 @@
     {
       "name": "B47",
       "total": 5000,
-      "done": 1756,
-      "pct": 35.1,
+      "done": 1805,
+      "pct": 36.1,
       "speed_sec": 36.6,
-      "eta_min": 1985,
+      "eta_min": 1953,
       "errors": 3,
       "timeouts": 2,
       "active": true
@@ -467,10 +467,10 @@
     {
       "name": "B48",
       "total": 5000,
-      "done": 1765,
-      "pct": 35.3,
+      "done": 1813,
+      "pct": 36.3,
       "speed_sec": 36.5,
-      "eta_min": 1977,
+      "eta_min": 1949,
       "errors": 0,
       "timeouts": 0,
       "active": true
