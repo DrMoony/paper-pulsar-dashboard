@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-29 07:29:27 KST",
-  "updated_at_iso": "2026-04-29T07:29:27.235383+09:00",
+  "updated_at_kst": "2026-04-29 07:59:41 KST",
+  "updated_at_iso": "2026-04-29T07:59:41.576335+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -476,6 +476,17 @@
       "active": false
     },
     {
+      "name": "B49",
+      "total": 5000,
+      "done": 40,
+      "pct": 0.8,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
       "name": "B5",
       "total": 119,
       "done": 119,
@@ -485,6 +496,83 @@
       "errors": 0,
       "timeouts": 0,
       "active": false
+    },
+    {
+      "name": "B50",
+      "total": 5000,
+      "done": 40,
+      "pct": 0.8,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B51",
+      "total": 5000,
+      "done": 42,
+      "pct": 0.8,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B52",
+      "total": 5000,
+      "done": 41,
+      "pct": 0.8,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B53",
+      "total": 5000,
+      "done": 36,
+      "pct": 0.7,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B54",
+      "total": 5000,
+      "done": 36,
+      "pct": 0.7,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B55",
+      "total": 5000,
+      "done": 36,
+      "pct": 0.7,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B56",
+      "total": 5000,
+      "done": 32,
+      "pct": 0.6,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
     },
     {
       "name": "B6",
@@ -533,9 +621,9 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 351054,
-      "pending": 36,
-      "queued_codex": 12400,
+      "analyzed": 363440,
+      "pending": 50,
+      "queued_codex": 0,
       "metadata": 268459,
       "skipped": 149,
       "failed": 0,
