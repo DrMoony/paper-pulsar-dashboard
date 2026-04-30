@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-04-30 11:40:44 KST",
-  "updated_at_iso": "2026-04-30T11:40:44.873841+09:00",
+  "updated_at_kst": "2026-04-30 12:10:56 KST",
+  "updated_at_iso": "2026-04-30T12:10:56.496391+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -478,10 +478,10 @@
     {
       "name": "B49",
       "total": 5000,
-      "done": 3195,
-      "pct": 63.9,
-      "speed_sec": 31.5,
-      "eta_min": 945,
+      "done": 3249,
+      "pct": 65.0,
+      "speed_sec": 31.6,
+      "eta_min": 920,
       "errors": 6,
       "timeouts": 3,
       "active": true
@@ -500,10 +500,10 @@
     {
       "name": "B50",
       "total": 5000,
-      "done": 3248,
-      "pct": 65.0,
-      "speed_sec": 31.0,
-      "eta_min": 905,
+      "done": 3300,
+      "pct": 66.0,
+      "speed_sec": 31.1,
+      "eta_min": 881,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -511,10 +511,10 @@
     {
       "name": "B51",
       "total": 5000,
-      "done": 3097,
-      "pct": 61.9,
+      "done": 3152,
+      "pct": 63.0,
       "speed_sec": 32.5,
-      "eta_min": 1029,
+      "eta_min": 1002,
       "errors": 6,
       "timeouts": 5,
       "active": true
@@ -522,10 +522,10 @@
     {
       "name": "B52",
       "total": 5000,
-      "done": 3217,
-      "pct": 64.3,
-      "speed_sec": 31.3,
-      "eta_min": 938,
+      "done": 3269,
+      "pct": 65.4,
+      "speed_sec": 31.4,
+      "eta_min": 915,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -533,10 +533,10 @@
     {
       "name": "B53",
       "total": 5000,
-      "done": 2776,
-      "pct": 55.5,
-      "speed_sec": 36.2,
-      "eta_min": 1359,
+      "done": 2822,
+      "pct": 56.4,
+      "speed_sec": 36.3,
+      "eta_min": 1332,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -544,10 +544,10 @@
     {
       "name": "B54",
       "total": 5000,
-      "done": 2804,
-      "pct": 56.1,
+      "done": 2852,
+      "pct": 57.0,
       "speed_sec": 35.9,
-      "eta_min": 1317,
+      "eta_min": 1288,
       "errors": 4,
       "timeouts": 4,
       "active": true
@@ -555,10 +555,10 @@
     {
       "name": "B55",
       "total": 5000,
-      "done": 2805,
-      "pct": 56.1,
-      "speed_sec": 35.9,
-      "eta_min": 1316,
+      "done": 2848,
+      "pct": 57.0,
+      "speed_sec": 36.0,
+      "eta_min": 1289,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -566,10 +566,10 @@
     {
       "name": "B56",
       "total": 5000,
-      "done": 2821,
-      "pct": 56.4,
+      "done": 2869,
+      "pct": 57.4,
       "speed_sec": 35.7,
-      "eta_min": 1309,
+      "eta_min": 1280,
       "errors": 2,
       "timeouts": 2,
       "active": true
