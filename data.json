@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-01 03:46:56 KST",
-  "updated_at_iso": "2026-05-01T03:46:56.847855+09:00",
+  "updated_at_kst": "2026-05-01 04:17:07 KST",
+  "updated_at_iso": "2026-05-01T04:17:07.718525+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -511,10 +511,10 @@
     {
       "name": "B51",
       "total": 5000,
-      "done": 4921,
-      "pct": 98.4,
-      "speed_sec": 32.3,
-      "eta_min": 54,
+      "done": 4985,
+      "pct": 99.7,
+      "speed_sec": 32.2,
+      "eta_min": 27,
       "errors": 8,
       "timeouts": 7,
       "active": true
@@ -522,21 +522,21 @@
     {
       "name": "B52",
       "total": 5000,
-      "done": 4961,
-      "pct": 99.2,
+      "done": 5000,
+      "pct": 100.0,
       "speed_sec": 32.0,
-      "eta_min": 27,
+      "eta_min": 0,
       "errors": 0,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B53",
       "total": 5000,
-      "done": 4375,
-      "pct": 87.5,
-      "speed_sec": 36.3,
-      "eta_min": 393,
+      "done": 4431,
+      "pct": 88.6,
+      "speed_sec": 36.2,
+      "eta_min": 362,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -544,10 +544,10 @@
     {
       "name": "B54",
       "total": 5000,
-      "done": 4415,
-      "pct": 88.3,
-      "speed_sec": 36.0,
-      "eta_min": 360,
+      "done": 4469,
+      "pct": 89.4,
+      "speed_sec": 35.9,
+      "eta_min": 329,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -555,10 +555,10 @@
     {
       "name": "B55",
       "total": 5000,
-      "done": 4405,
-      "pct": 88.1,
+      "done": 4460,
+      "pct": 89.2,
       "speed_sec": 36.0,
-      "eta_min": 360,
+      "eta_min": 330,
       "errors": 8,
       "timeouts": 7,
       "active": true
@@ -566,10 +566,10 @@
     {
       "name": "B56",
       "total": 5000,
-      "done": 4438,
-      "pct": 88.8,
-      "speed_sec": 35.8,
-      "eta_min": 358,
+      "done": 4492,
+      "pct": 89.8,
+      "speed_sec": 35.7,
+      "eta_min": 328,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -621,8 +621,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 364007,
-      "pending": 189,
+      "analyzed": 364028,
+      "pending": 168,
       "queued_codex": 0,
       "metadata": 268459,
       "skipped": 149,
@@ -631,10 +631,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 3070,
+      "mlx-v53": 3091,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39028
+    "reviewNeeded": 39040
   },
   "daily_runs": [],
   "system": {
