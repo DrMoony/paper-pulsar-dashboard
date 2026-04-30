@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-01 03:16:44 KST",
-  "updated_at_iso": "2026-05-01T03:16:44.987263+09:00",
+  "updated_at_kst": "2026-05-01 03:46:56 KST",
+  "updated_at_iso": "2026-05-01T03:46:56.847855+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -478,13 +478,13 @@
     {
       "name": "B49",
       "total": 5000,
-      "done": 4962,
-      "pct": 99.2,
+      "done": 4993,
+      "pct": 99.9,
       "speed_sec": 31.6,
-      "eta_min": 26,
+      "eta_min": 0,
       "errors": 8,
       "timeouts": 5,
-      "active": true
+      "active": false
     },
     {
       "name": "B5",
@@ -500,21 +500,21 @@
     {
       "name": "B50",
       "total": 5000,
-      "done": 4966,
-      "pct": 99.3,
+      "done": 4995,
+      "pct": 99.9,
       "speed_sec": 31.6,
-      "eta_min": 26,
+      "eta_min": 0,
       "errors": 6,
       "timeouts": 4,
-      "active": true
+      "active": false
     },
     {
       "name": "B51",
       "total": 5000,
-      "done": 4858,
-      "pct": 97.2,
+      "done": 4921,
+      "pct": 98.4,
       "speed_sec": 32.3,
-      "eta_min": 81,
+      "eta_min": 54,
       "errors": 8,
       "timeouts": 7,
       "active": true
@@ -522,10 +522,10 @@
     {
       "name": "B52",
       "total": 5000,
-      "done": 4899,
-      "pct": 98.0,
-      "speed_sec": 32.1,
-      "eta_min": 80,
+      "done": 4961,
+      "pct": 99.2,
+      "speed_sec": 32.0,
+      "eta_min": 27,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -533,10 +533,10 @@
     {
       "name": "B53",
       "total": 5000,
-      "done": 4321,
-      "pct": 86.4,
+      "done": 4375,
+      "pct": 87.5,
       "speed_sec": 36.3,
-      "eta_min": 424,
+      "eta_min": 393,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -544,10 +544,10 @@
     {
       "name": "B54",
       "total": 5000,
-      "done": 4357,
-      "pct": 87.1,
+      "done": 4415,
+      "pct": 88.3,
       "speed_sec": 36.0,
-      "eta_min": 390,
+      "eta_min": 360,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -555,10 +555,10 @@
     {
       "name": "B55",
       "total": 5000,
-      "done": 4346,
-      "pct": 86.9,
-      "speed_sec": 36.1,
-      "eta_min": 391,
+      "done": 4405,
+      "pct": 88.1,
+      "speed_sec": 36.0,
+      "eta_min": 360,
       "errors": 8,
       "timeouts": 7,
       "active": true
@@ -566,10 +566,10 @@
     {
       "name": "B56",
       "total": 5000,
-      "done": 4384,
-      "pct": 87.7,
+      "done": 4438,
+      "pct": 88.8,
       "speed_sec": 35.8,
-      "eta_min": 388,
+      "eta_min": 358,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -621,8 +621,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 363986,
-      "pending": 210,
+      "analyzed": 364007,
+      "pending": 189,
       "queued_codex": 0,
       "metadata": 268459,
       "skipped": 149,
@@ -631,10 +631,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 3049,
+      "mlx-v53": 3070,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39022
+    "reviewNeeded": 39028
   },
   "daily_runs": [],
   "system": {
