@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-03 12:46:19 KST",
-  "updated_at_iso": "2026-05-03T12:46:19.010334+09:00",
+  "updated_at_kst": "2026-05-03 13:16:33 KST",
+  "updated_at_iso": "2026-05-03T13:16:33.177091+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -642,7 +642,7 @@
       "total": "228Gi",
       "used": "12Gi",
       "avail": "33Gi",
-      "pct": "27%"
+      "pct": "26%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
