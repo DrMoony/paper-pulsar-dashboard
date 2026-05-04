@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-04 23:05:06 KST",
-  "updated_at_iso": "2026-05-04T23:05:06.721351+09:00",
+  "updated_at_kst": "2026-05-04 23:35:18 KST",
+  "updated_at_iso": "2026-05-04T23:35:18.994620+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -575,6 +575,39 @@
       "active": false
     },
     {
+      "name": "B57",
+      "total": 5000,
+      "done": 47,
+      "pct": 0.9,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B58",
+      "total": 5000,
+      "done": 56,
+      "pct": 1.1,
+      "speed_sec": 30.3,
+      "eta_min": 2499,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B59",
+      "total": 5000,
+      "done": 52,
+      "pct": 1.0,
+      "speed_sec": 32.3,
+      "eta_min": 2665,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
       "name": "B6",
       "total": 119,
       "done": 119,
@@ -584,6 +617,61 @@
       "errors": 0,
       "timeouts": 0,
       "active": false
+    },
+    {
+      "name": "B60",
+      "total": 5000,
+      "done": 55,
+      "pct": 1.1,
+      "speed_sec": 29.9,
+      "eta_min": 2465,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B61",
+      "total": 5000,
+      "done": 50,
+      "pct": 1.0,
+      "speed_sec": 33.6,
+      "eta_min": 2769,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B62",
+      "total": 5000,
+      "done": 46,
+      "pct": 0.9,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B63",
+      "total": 5000,
+      "done": 47,
+      "pct": 0.9,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
+    },
+    {
+      "name": "B64",
+      "total": 5000,
+      "done": 49,
+      "pct": 1.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": true
     },
     {
       "name": "B7",
@@ -621,20 +709,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 365867,
-      "pending": 729,
+      "analyzed": 417128,
+      "pending": 662,
       "queued_codex": 0,
-      "metadata": 268459,
+      "metadata": 217723,
       "skipped": 149,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 4930,
+      "mlx-v53": 4951,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39562
+    "reviewNeeded": 39566
   },
   "daily_runs": [],
   "system": {
@@ -642,7 +730,7 @@
       "total": "228Gi",
       "used": "12Gi",
       "avail": "33Gi",
-      "pct": "26%"
+      "pct": "27%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
