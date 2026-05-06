@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-06 11:50:30 KST",
-  "updated_at_iso": "2026-05-06T11:50:30.193702+09:00",
+  "updated_at_kst": "2026-05-06 12:20:42 KST",
+  "updated_at_iso": "2026-05-06T12:20:42.185196+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -577,10 +577,10 @@
     {
       "name": "B57",
       "total": 5000,
-      "done": 4465,
-      "pct": 89.3,
+      "done": 4524,
+      "pct": 90.5,
       "speed_sec": 29.6,
-      "eta_min": 271,
+      "eta_min": 246,
       "errors": 4,
       "timeouts": 2,
       "active": true
@@ -588,10 +588,10 @@
     {
       "name": "B58",
       "total": 5000,
-      "done": 4562,
-      "pct": 91.2,
+      "done": 4619,
+      "pct": 92.4,
       "speed_sec": 29.0,
-      "eta_min": 217,
+      "eta_min": 193,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -599,10 +599,10 @@
     {
       "name": "B59",
       "total": 5000,
-      "done": 4268,
-      "pct": 85.4,
+      "done": 4331,
+      "pct": 86.6,
       "speed_sec": 30.9,
-      "eta_min": 387,
+      "eta_min": 360,
       "errors": 10,
       "timeouts": 3,
       "active": true
@@ -621,10 +621,10 @@
     {
       "name": "B60",
       "total": 5000,
-      "done": 4535,
-      "pct": 90.7,
+      "done": 4593,
+      "pct": 91.9,
       "speed_sec": 29.1,
-      "eta_min": 243,
+      "eta_min": 219,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -632,10 +632,10 @@
     {
       "name": "B61",
       "total": 5000,
-      "done": 4010,
-      "pct": 80.2,
+      "done": 4065,
+      "pct": 81.3,
       "speed_sec": 32.9,
-      "eta_min": 549,
+      "eta_min": 521,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -643,10 +643,10 @@
     {
       "name": "B62",
       "total": 5000,
-      "done": 3951,
-      "pct": 79.0,
+      "done": 4004,
+      "pct": 80.1,
       "speed_sec": 33.4,
-      "eta_min": 585,
+      "eta_min": 557,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -654,10 +654,10 @@
     {
       "name": "B63",
       "total": 5000,
-      "done": 3946,
-      "pct": 78.9,
-      "speed_sec": 33.4,
-      "eta_min": 613,
+      "done": 3998,
+      "pct": 80.0,
+      "speed_sec": 33.5,
+      "eta_min": 558,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -665,10 +665,10 @@
     {
       "name": "B64",
       "total": 5000,
-      "done": 3877,
-      "pct": 77.5,
+      "done": 3928,
+      "pct": 78.6,
       "speed_sec": 34.1,
-      "eta_min": 653,
+      "eta_min": 625,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -729,8 +729,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "22Gi",
-      "pct": "35%"
+      "avail": "21Gi",
+      "pct": "36%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
