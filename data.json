@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-06 09:49:40 KST",
-  "updated_at_iso": "2026-05-06T09:49:40.930502+09:00",
+  "updated_at_kst": "2026-05-06 10:19:53 KST",
+  "updated_at_iso": "2026-05-06T10:19:53.126418+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -577,10 +577,10 @@
     {
       "name": "B57",
       "total": 5000,
-      "done": 4230,
-      "pct": 84.6,
+      "done": 4292,
+      "pct": 85.8,
       "speed_sec": 29.5,
-      "eta_min": 394,
+      "eta_min": 369,
       "errors": 4,
       "timeouts": 2,
       "active": true
@@ -588,10 +588,10 @@
     {
       "name": "B58",
       "total": 5000,
-      "done": 4325,
-      "pct": 86.5,
+      "done": 4386,
+      "pct": 87.7,
       "speed_sec": 28.9,
-      "eta_min": 337,
+      "eta_min": 313,
       "errors": 2,
       "timeouts": 2,
       "active": true
@@ -599,10 +599,10 @@
     {
       "name": "B59",
       "total": 5000,
-      "done": 4024,
-      "pct": 80.5,
+      "done": 4083,
+      "pct": 81.7,
       "speed_sec": 31.0,
-      "eta_min": 516,
+      "eta_min": 491,
       "errors": 10,
       "timeouts": 3,
       "active": true
@@ -621,10 +621,10 @@
     {
       "name": "B60",
       "total": 5000,
-      "done": 4295,
-      "pct": 85.9,
+      "done": 4356,
+      "pct": 87.1,
       "speed_sec": 29.1,
-      "eta_min": 364,
+      "eta_min": 315,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -632,10 +632,10 @@
     {
       "name": "B61",
       "total": 5000,
-      "done": 3801,
-      "pct": 76.0,
-      "speed_sec": 32.8,
-      "eta_min": 657,
+      "done": 3854,
+      "pct": 77.1,
+      "speed_sec": 32.9,
+      "eta_min": 630,
       "errors": 5,
       "timeouts": 5,
       "active": true
@@ -643,10 +643,10 @@
     {
       "name": "B62",
       "total": 5000,
-      "done": 3750,
-      "pct": 75.0,
+      "done": 3803,
+      "pct": 76.1,
       "speed_sec": 33.3,
-      "eta_min": 694,
+      "eta_min": 666,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -654,10 +654,10 @@
     {
       "name": "B63",
       "total": 5000,
-      "done": 3745,
-      "pct": 74.9,
-      "speed_sec": 33.4,
-      "eta_min": 723,
+      "done": 3797,
+      "pct": 75.9,
+      "speed_sec": 33.3,
+      "eta_min": 695,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -665,10 +665,10 @@
     {
       "name": "B64",
       "total": 5000,
-      "done": 3682,
-      "pct": 73.6,
+      "done": 3734,
+      "pct": 74.7,
       "speed_sec": 33.9,
-      "eta_min": 763,
+      "eta_min": 735,
       "errors": 6,
       "timeouts": 6,
       "active": true
