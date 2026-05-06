@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-07 03:28:07 KST",
-  "updated_at_iso": "2026-05-07T03:28:07.774655+09:00",
+  "updated_at_kst": "2026-05-07 03:58:22 KST",
+  "updated_at_iso": "2026-05-07T03:58:22.664130+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -676,21 +676,21 @@
     {
       "name": "B65",
       "total": 5001,
-      "done": 547,
-      "pct": 10.9,
-      "speed_sec": 36.6,
-      "eta_min": 2749,
-      "errors": 2,
+      "done": 608,
+      "pct": 12.2,
+      "speed_sec": 35.5,
+      "eta_min": 2606,
+      "errors": 3,
       "timeouts": 0,
       "active": true
     },
     {
       "name": "B66",
       "total": 5001,
-      "done": 558,
-      "pct": 11.2,
-      "speed_sec": 35.5,
-      "eta_min": 2636,
+      "done": 615,
+      "pct": 12.3,
+      "speed_sec": 35.2,
+      "eta_min": 2580,
       "errors": 3,
       "timeouts": 1,
       "active": true
@@ -698,10 +698,10 @@
     {
       "name": "B67",
       "total": 5001,
-      "done": 572,
-      "pct": 11.4,
-      "speed_sec": 34.8,
-      "eta_min": 2584,
+      "done": 632,
+      "pct": 12.6,
+      "speed_sec": 34.3,
+      "eta_min": 2516,
       "errors": 2,
       "timeouts": 0,
       "active": true
@@ -709,10 +709,10 @@
     {
       "name": "B68",
       "total": 5000,
-      "done": 555,
-      "pct": 11.1,
-      "speed_sec": 35.8,
-      "eta_min": 2656,
+      "done": 613,
+      "pct": 12.3,
+      "speed_sec": 35.5,
+      "eta_min": 2600,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -753,20 +753,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 417358,
-      "pending": 2473,
+      "analyzed": 417380,
+      "pending": 2465,
       "queued_codex": 0,
       "metadata": 217723,
-      "skipped": 153,
+      "skipped": 154,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 5181,
+      "mlx-v53": 5203,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39619
+    "reviewNeeded": 39620
   },
   "daily_runs": [],
   "system": {
