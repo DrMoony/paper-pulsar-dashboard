@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-08 20:46:50 KST",
-  "updated_at_iso": "2026-05-08T20:46:50.071567+09:00",
+  "updated_at_kst": "2026-05-08 21:17:06 KST",
+  "updated_at_iso": "2026-05-08T21:17:06.719345+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -722,9 +722,9 @@
       "total": 5000,
       "done": 4077,
       "pct": 81.5,
-      "speed_sec": 33.0,
-      "eta_min": 412,
-      "errors": 174,
+      "speed_sec": 30.5,
+      "eta_min": 178,
+      "errors": 574,
       "timeouts": 2,
       "active": true
     },
@@ -744,9 +744,9 @@
       "total": 4999,
       "done": 4025,
       "pct": 80.5,
-      "speed_sec": 33.4,
-      "eta_min": 445,
-      "errors": 175,
+      "speed_sec": 30.6,
+      "eta_min": 178,
+      "errors": 625,
       "timeouts": 4,
       "active": true
     },
@@ -755,9 +755,9 @@
       "total": 4999,
       "done": 4027,
       "pct": 80.6,
-      "speed_sec": 33.4,
-      "eta_min": 445,
-      "errors": 176,
+      "speed_sec": 30.9,
+      "eta_min": 205,
+      "errors": 576,
       "timeouts": 5,
       "active": true
     },
@@ -766,9 +766,9 @@
       "total": 4999,
       "done": 4045,
       "pct": 80.9,
-      "speed_sec": 33.0,
-      "eta_min": 412,
-      "errors": 206,
+      "speed_sec": 30.6,
+      "eta_min": 178,
+      "errors": 606,
       "timeouts": 2,
       "active": true
     },
@@ -817,8 +817,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "35Gi",
-      "pct": "25%"
+      "avail": "54Gi",
+      "pct": "18%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
