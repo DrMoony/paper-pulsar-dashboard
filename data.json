@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-09 06:22:18 KST",
-  "updated_at_iso": "2026-05-09T06:22:18.494175+09:00",
+  "updated_at_kst": "2026-05-09 06:52:36 KST",
+  "updated_at_iso": "2026-05-09T06:52:36.009158+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -775,21 +775,21 @@
     {
       "name": "B73",
       "total": 957,
-      "done": 164,
-      "pct": 17.1,
-      "speed_sec": 31.2,
-      "eta_min": 420,
-      "errors": 0,
-      "timeouts": 0,
+      "done": 214,
+      "pct": 22.4,
+      "speed_sec": 32.7,
+      "eta_min": 413,
+      "errors": 1,
+      "timeouts": 1,
       "active": true
     },
     {
       "name": "B74",
       "total": 957,
-      "done": 169,
-      "pct": 17.7,
-      "speed_sec": 30.4,
-      "eta_min": 409,
+      "done": 228,
+      "pct": 23.8,
+      "speed_sec": 30.6,
+      "eta_min": 386,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -797,10 +797,10 @@
     {
       "name": "B75",
       "total": 957,
-      "done": 162,
-      "pct": 16.9,
-      "speed_sec": 31.7,
-      "eta_min": 426,
+      "done": 218,
+      "pct": 22.8,
+      "speed_sec": 31.9,
+      "eta_min": 403,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -808,11 +808,11 @@
     {
       "name": "B76",
       "total": 957,
-      "done": 165,
-      "pct": 17.2,
-      "speed_sec": 31.1,
-      "eta_min": 418,
-      "errors": 0,
+      "done": 222,
+      "pct": 23.2,
+      "speed_sec": 31.4,
+      "eta_min": 396,
+      "errors": 1,
       "timeouts": 0,
       "active": true
     },
