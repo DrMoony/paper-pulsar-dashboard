@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-09 22:31:51 KST",
-  "updated_at_iso": "2026-05-09T22:31:51.160700+09:00",
+  "updated_at_kst": "2026-05-09 23:02:10 KST",
+  "updated_at_iso": "2026-05-09T23:02:10.344922+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -830,13 +830,13 @@
     {
       "name": "B78",
       "total": 917,
-      "done": 897,
-      "pct": 97.8,
-      "speed_sec": 34.1,
-      "eta_min": 38,
+      "done": 916,
+      "pct": 99.9,
+      "speed_sec": 34.2,
+      "eta_min": 10,
       "errors": 1,
       "timeouts": 1,
-      "active": true
+      "active": false
     },
     {
       "name": "B79",
