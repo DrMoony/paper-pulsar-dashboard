@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-09 21:31:18 KST",
-  "updated_at_iso": "2026-05-09T21:31:18.886127+09:00",
+  "updated_at_kst": "2026-05-09 22:01:34 KST",
+  "updated_at_iso": "2026-05-09T22:01:34.506997+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -819,21 +819,21 @@
     {
       "name": "B77",
       "total": 917,
-      "done": 819,
-      "pct": 89.3,
-      "speed_sec": 32.9,
-      "eta_min": 64,
-      "errors": 0,
-      "timeouts": 0,
+      "done": 868,
+      "pct": 94.7,
+      "speed_sec": 33.2,
+      "eta_min": 37,
+      "errors": 1,
+      "timeouts": 1,
       "active": true
     },
     {
       "name": "B78",
       "total": 917,
-      "done": 789,
-      "pct": 86.0,
-      "speed_sec": 34.1,
-      "eta_min": 95,
+      "done": 846,
+      "pct": 92.3,
+      "speed_sec": 34.2,
+      "eta_min": 67,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -841,10 +841,10 @@
     {
       "name": "B79",
       "total": 917,
-      "done": 808,
-      "pct": 88.1,
-      "speed_sec": 33.3,
-      "eta_min": 65,
+      "done": 864,
+      "pct": 94.2,
+      "speed_sec": 33.4,
+      "eta_min": 37,
       "errors": 1,
       "timeouts": 0,
       "active": true
@@ -863,12 +863,12 @@
     {
       "name": "B80",
       "total": 917,
-      "done": 807,
-      "pct": 88.0,
-      "speed_sec": 33.3,
-      "eta_min": 65,
-      "errors": 0,
-      "timeouts": 0,
+      "done": 863,
+      "pct": 94.1,
+      "speed_sec": 33.4,
+      "eta_min": 37,
+      "errors": 1,
+      "timeouts": 1,
       "active": true
     },
     {
