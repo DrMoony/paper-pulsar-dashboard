@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-09 17:28:59 KST",
-  "updated_at_iso": "2026-05-09T17:28:59.812129+09:00",
+  "updated_at_kst": "2026-05-09 17:59:20 KST",
+  "updated_at_iso": "2026-05-09T17:59:20.145783+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -819,10 +819,10 @@
     {
       "name": "B77",
       "total": 917,
-      "done": 363,
-      "pct": 39.6,
-      "speed_sec": 34.6,
-      "eta_min": 327,
+      "done": 418,
+      "pct": 45.6,
+      "speed_sec": 34.4,
+      "eta_min": 296,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -830,10 +830,10 @@
     {
       "name": "B78",
       "total": 917,
-      "done": 357,
-      "pct": 38.9,
+      "done": 411,
+      "pct": 44.8,
       "speed_sec": 35.0,
-      "eta_min": 331,
+      "eta_min": 301,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -841,10 +841,10 @@
     {
       "name": "B79",
       "total": 917,
-      "done": 361,
-      "pct": 39.4,
-      "speed_sec": 34.7,
-      "eta_min": 328,
+      "done": 415,
+      "pct": 45.3,
+      "speed_sec": 34.5,
+      "eta_min": 297,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -863,10 +863,10 @@
     {
       "name": "B80",
       "total": 917,
-      "done": 358,
-      "pct": 39.0,
+      "done": 413,
+      "pct": 45.0,
       "speed_sec": 34.9,
-      "eta_min": 330,
+      "eta_min": 300,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -905,7 +905,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "40Gi",
+      "avail": "41Gi",
       "pct": "23%"
     },
     "mlx_lm_running": true,
