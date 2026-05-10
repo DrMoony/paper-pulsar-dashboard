@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-10 21:48:19 KST",
-  "updated_at_iso": "2026-05-10T21:48:19.614760+09:00",
+  "updated_at_kst": "2026-05-10 22:18:33 KST",
+  "updated_at_iso": "2026-05-10T22:18:33.740904+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -874,46 +874,46 @@
     {
       "name": "B81",
       "total": 65,
-      "done": 35,
-      "pct": 53.8,
-      "speed_sec": null,
-      "eta_min": null,
-      "errors": 0,
+      "done": 63,
+      "pct": 96.9,
+      "speed_sec": 33.4,
+      "eta_min": 8,
+      "errors": 2,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B82",
       "total": 65,
-      "done": 39,
-      "pct": 60.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "done": 65,
+      "pct": 100.0,
+      "speed_sec": 31.9,
+      "eta_min": 8,
       "errors": 0,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B83",
       "total": 65,
-      "done": 39,
-      "pct": 60.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "done": 65,
+      "pct": 100.0,
+      "speed_sec": 33.4,
+      "eta_min": 8,
       "errors": 0,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B84",
       "total": 63,
-      "done": 37,
-      "pct": 58.7,
-      "speed_sec": null,
-      "eta_min": null,
+      "done": 63,
+      "pct": 100.0,
+      "speed_sec": 35.3,
+      "eta_min": 8,
       "errors": 0,
       "timeouts": 0,
-      "active": true
+      "active": false
     },
     {
       "name": "B9",
@@ -929,10 +929,10 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 417935,
-      "pending": 4047,
+      "analyzed": 444570,
+      "pending": 1890,
       "queued_codex": 0,
-      "metadata": 217723,
+      "metadata": 193245,
       "skipped": 190,
       "failed": 0,
       "summarizing": 0
