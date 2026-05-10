@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-10 21:18:04 KST",
-  "updated_at_iso": "2026-05-10T21:18:04.096035+09:00",
+  "updated_at_kst": "2026-05-10 21:48:19 KST",
+  "updated_at_iso": "2026-05-10T21:48:19.614760+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -874,46 +874,46 @@
     {
       "name": "B81",
       "total": 65,
-      "done": 0,
-      "pct": 0.0,
+      "done": 35,
+      "pct": 53.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B82",
       "total": 65,
-      "done": 0,
-      "pct": 0.0,
+      "done": 39,
+      "pct": 60.0,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B83",
       "total": 65,
-      "done": 0,
-      "pct": 0.0,
+      "done": 39,
+      "pct": 60.0,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B84",
       "total": 63,
-      "done": 0,
-      "pct": 0.0,
+      "done": 37,
+      "pct": 58.7,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B9",
