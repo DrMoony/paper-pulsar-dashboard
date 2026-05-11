@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-12 04:06:53 KST",
-  "updated_at_iso": "2026-05-12T04:06:53.531290+09:00",
+  "updated_at_kst": "2026-05-12 04:37:12 KST",
+  "updated_at_iso": "2026-05-12T04:37:12.550782+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -918,10 +918,10 @@
     {
       "name": "B85",
       "total": 500,
-      "done": 332,
-      "pct": 66.4,
-      "speed_sec": 33.2,
-      "eta_min": 111,
+      "done": 388,
+      "pct": 77.6,
+      "speed_sec": 32.8,
+      "eta_min": 82,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -929,21 +929,21 @@
     {
       "name": "B86",
       "total": 500,
-      "done": 354,
-      "pct": 70.8,
-      "speed_sec": 30.7,
-      "eta_min": 77,
-      "errors": 0,
-      "timeouts": 0,
+      "done": 405,
+      "pct": 81.0,
+      "speed_sec": 31.2,
+      "eta_min": 52,
+      "errors": 1,
+      "timeouts": 1,
       "active": true
     },
     {
       "name": "B87",
       "total": 500,
-      "done": 329,
-      "pct": 65.8,
-      "speed_sec": 33.2,
-      "eta_min": 111,
+      "done": 386,
+      "pct": 77.2,
+      "speed_sec": 32.8,
+      "eta_min": 82,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -951,10 +951,10 @@
     {
       "name": "B88",
       "total": 500,
-      "done": 338,
-      "pct": 67.6,
-      "speed_sec": 32.5,
-      "eta_min": 108,
+      "done": 397,
+      "pct": 79.4,
+      "speed_sec": 32.1,
+      "eta_min": 80,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -973,8 +973,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 464613,
-      "pending": 645,
+      "analyzed": 464632,
+      "pending": 626,
       "queued_codex": 0,
       "metadata": 175071,
       "skipped": 196,
@@ -983,10 +983,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 5866,
+      "mlx-v53": 5885,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39771
+    "reviewNeeded": 39777
   },
   "daily_runs": [],
   "system": {
