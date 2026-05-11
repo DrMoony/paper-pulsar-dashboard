@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-12 04:37:12 KST",
-  "updated_at_iso": "2026-05-12T04:37:12.550782+09:00",
+  "updated_at_kst": "2026-05-12 05:07:29 KST",
+  "updated_at_iso": "2026-05-12T05:07:29.968247+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -918,10 +918,10 @@
     {
       "name": "B85",
       "total": 500,
-      "done": 388,
-      "pct": 77.6,
+      "done": 443,
+      "pct": 88.6,
       "speed_sec": 32.8,
-      "eta_min": 82,
+      "eta_min": 55,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -929,10 +929,10 @@
     {
       "name": "B86",
       "total": 500,
-      "done": 405,
-      "pct": 81.0,
-      "speed_sec": 31.2,
-      "eta_min": 52,
+      "done": 461,
+      "pct": 92.2,
+      "speed_sec": 31.4,
+      "eta_min": 26,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -940,10 +940,10 @@
     {
       "name": "B87",
       "total": 500,
-      "done": 386,
-      "pct": 77.2,
+      "done": 445,
+      "pct": 89.0,
       "speed_sec": 32.8,
-      "eta_min": 82,
+      "eta_min": 55,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -951,10 +951,10 @@
     {
       "name": "B88",
       "total": 500,
-      "done": 397,
-      "pct": 79.4,
-      "speed_sec": 32.1,
-      "eta_min": 80,
+      "done": 452,
+      "pct": 90.4,
+      "speed_sec": 31.9,
+      "eta_min": 27,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -973,20 +973,20 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 464632,
-      "pending": 626,
+      "analyzed": 464661,
+      "pending": 595,
       "queued_codex": 0,
       "metadata": 175071,
-      "skipped": 196,
+      "skipped": 198,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 5885,
+      "mlx-v53": 5914,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39777
+    "reviewNeeded": 39787
   },
   "daily_runs": [],
   "system": {
