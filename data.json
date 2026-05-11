@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-12 07:39:05 KST",
-  "updated_at_iso": "2026-05-12T07:39:05.015925+09:00",
+  "updated_at_kst": "2026-05-12 08:09:27 KST",
+  "updated_at_iso": "2026-05-12T08:09:27.516575+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -960,6 +960,17 @@
       "active": false
     },
     {
+      "name": "B89",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
       "name": "B9",
       "total": 1524,
       "done": 1522,
@@ -969,24 +980,101 @@
       "errors": 1,
       "timeouts": 1,
       "active": false
+    },
+    {
+      "name": "B90",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B91",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B92",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B93",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B94",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B95",
+      "total": 1519,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
+    },
+    {
+      "name": "B96",
+      "total": 1517,
+      "done": 0,
+      "pct": 0.0,
+      "speed_sec": null,
+      "eta_min": null,
+      "errors": 0,
+      "timeouts": 0,
+      "active": false
     }
   ],
   "firestore": {
     "status": {
-      "analyzed": 466802,
-      "pending": 449,
+      "analyzed": 466824,
+      "pending": 298,
       "queued_codex": 0,
       "metadata": 173072,
-      "skipped": 202,
+      "skipped": 331,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 6056,
+      "mlx-v53": 6078,
       "mlx-v52": 0
     },
-    "reviewNeeded": 39834
+    "reviewNeeded": 39838
   },
   "daily_runs": [],
   "system": {
