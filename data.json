@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-13 21:46:56 KST",
-  "updated_at_iso": "2026-05-13T21:46:56.507294+09:00",
+  "updated_at_kst": "2026-05-13 22:17:28 KST",
+  "updated_at_iso": "2026-05-13T22:17:28.894785+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -961,14 +961,14 @@
     },
     {
       "name": "B89",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "total": 5000,
+      "done": 51,
+      "pct": 1.0,
+      "speed_sec": 32.5,
+      "eta_min": 2680,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B9",
@@ -983,80 +983,80 @@
     },
     {
       "name": "B90",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "total": 5000,
+      "done": 53,
+      "pct": 1.1,
+      "speed_sec": 31.8,
+      "eta_min": 2627,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B91",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "total": 5000,
+      "done": 59,
+      "pct": 1.2,
+      "speed_sec": 28.2,
+      "eta_min": 2329,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B92",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
-      "speed_sec": null,
-      "eta_min": null,
+      "total": 5000,
+      "done": 52,
+      "pct": 1.0,
+      "speed_sec": 32.8,
+      "eta_min": 2704,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B93",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
+      "total": 5000,
+      "done": 44,
+      "pct": 0.9,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B94",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
+      "total": 5000,
+      "done": 48,
+      "pct": 1.0,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B95",
-      "total": 1519,
-      "done": 0,
-      "pct": 0.0,
+      "total": 5000,
+      "done": 46,
+      "pct": 0.9,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     },
     {
       "name": "B96",
-      "total": 1517,
-      "done": 0,
-      "pct": 0.0,
+      "total": 5000,
+      "done": 47,
+      "pct": 0.9,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
       "timeouts": 0,
-      "active": false
+      "active": true
     }
   ],
   "firestore": {
