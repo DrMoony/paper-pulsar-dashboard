@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-15 04:09:21 KST",
-  "updated_at_iso": "2026-05-15T04:09:21.480867+09:00",
+  "updated_at_kst": "2026-05-15 04:41:51 KST",
+  "updated_at_iso": "2026-05-15T04:41:51.778456+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -962,10 +962,10 @@
     {
       "name": "B89",
       "total": 5000,
-      "done": 3423,
-      "pct": 68.5,
-      "speed_sec": 32.0,
-      "eta_min": 852,
+      "done": 3492,
+      "pct": 69.8,
+      "speed_sec": 31.9,
+      "eta_min": 824,
       "errors": 0,
       "timeouts": 0,
       "active": true
@@ -984,10 +984,10 @@
     {
       "name": "B90",
       "total": 5000,
-      "done": 3506,
-      "pct": 70.1,
+      "done": 3569,
+      "pct": 71.4,
       "speed_sec": 31.1,
-      "eta_min": 778,
+      "eta_min": 752,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -995,10 +995,10 @@
     {
       "name": "B91",
       "total": 5000,
-      "done": 3348,
-      "pct": 67.0,
-      "speed_sec": 32.6,
-      "eta_min": 896,
+      "done": 3417,
+      "pct": 68.3,
+      "speed_sec": 32.5,
+      "eta_min": 867,
       "errors": 7,
       "timeouts": 6,
       "active": true
@@ -1006,10 +1006,10 @@
     {
       "name": "B92",
       "total": 5000,
-      "done": 3369,
-      "pct": 67.4,
+      "done": 3437,
+      "pct": 68.7,
       "speed_sec": 32.4,
-      "eta_min": 891,
+      "eta_min": 863,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -1017,10 +1017,10 @@
     {
       "name": "B93",
       "total": 5000,
-      "done": 2956,
-      "pct": 59.1,
-      "speed_sec": 37.0,
-      "eta_min": 1263,
+      "done": 3011,
+      "pct": 60.2,
+      "speed_sec": 36.9,
+      "eta_min": 1231,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -1028,10 +1028,10 @@
     {
       "name": "B94",
       "total": 5000,
-      "done": 3043,
-      "pct": 60.9,
-      "speed_sec": 35.9,
-      "eta_min": 1197,
+      "done": 3103,
+      "pct": 62.1,
+      "speed_sec": 35.8,
+      "eta_min": 1134,
       "errors": 4,
       "timeouts": 4,
       "active": true
@@ -1039,10 +1039,10 @@
     {
       "name": "B95",
       "total": 5000,
-      "done": 3040,
-      "pct": 60.8,
-      "speed_sec": 36.0,
-      "eta_min": 1201,
+      "done": 3101,
+      "pct": 62.0,
+      "speed_sec": 35.8,
+      "eta_min": 1135,
       "errors": 3,
       "timeouts": 3,
       "active": true
@@ -1050,10 +1050,10 @@
     {
       "name": "B96",
       "total": 5000,
-      "done": 2990,
-      "pct": 59.8,
-      "speed_sec": 36.6,
-      "eta_min": 1249,
+      "done": 3048,
+      "pct": 61.0,
+      "speed_sec": 36.4,
+      "eta_min": 1184,
       "errors": 7,
       "timeouts": 7,
       "active": true
@@ -1081,7 +1081,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "6.8Gi",
+      "avail": "6.7Gi",
       "pct": "64%"
     },
     "mlx_lm_running": true,
