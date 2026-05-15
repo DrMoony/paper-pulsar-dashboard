@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-15 20:40:22 KST",
-  "updated_at_iso": "2026-05-15T20:40:22.002570+09:00",
+  "updated_at_kst": "2026-05-15 21:12:37 KST",
+  "updated_at_iso": "2026-05-15T21:12:37.432339+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -1017,10 +1017,10 @@
     {
       "name": "B93",
       "total": 5000,
-      "done": 4588,
-      "pct": 91.8,
+      "done": 4640,
+      "pct": 92.8,
       "speed_sec": 36.8,
-      "eta_min": 276,
+      "eta_min": 245,
       "errors": 1,
       "timeouts": 1,
       "active": true
@@ -1028,10 +1028,10 @@
     {
       "name": "B94",
       "total": 5000,
-      "done": 4589,
-      "pct": 91.8,
+      "done": 4640,
+      "pct": 92.8,
       "speed_sec": 36.8,
-      "eta_min": 276,
+      "eta_min": 245,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -1039,10 +1039,10 @@
     {
       "name": "B95",
       "total": 5000,
-      "done": 4609,
-      "pct": 92.2,
+      "done": 4662,
+      "pct": 93.2,
       "speed_sec": 36.6,
-      "eta_min": 244,
+      "eta_min": 213,
       "errors": 6,
       "timeouts": 6,
       "active": true
@@ -1050,10 +1050,10 @@
     {
       "name": "B96",
       "total": 5000,
-      "done": 4567,
-      "pct": 91.3,
+      "done": 4626,
+      "pct": 92.5,
       "speed_sec": 36.9,
-      "eta_min": 277,
+      "eta_min": 246,
       "errors": 10,
       "timeouts": 10,
       "active": true
@@ -1081,7 +1081,7 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "9.8Gi",
+      "avail": "9.5Gi",
       "pct": "55%"
     },
     "mlx_lm_running": true,
