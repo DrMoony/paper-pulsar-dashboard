@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-17 16:20:52 KST",
-  "updated_at_iso": "2026-05-17T16:20:52.021712+09:00",
+  "updated_at_kst": "2026-05-17 16:52:32 KST",
+  "updated_at_iso": "2026-05-17T16:52:32.228053+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -1061,28 +1061,28 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 503413,
-      "pending": 1125,
+      "analyzed": 503444,
+      "pending": 1093,
       "queued_codex": 0,
       "metadata": 138833,
-      "skipped": 423,
+      "skipped": 424,
       "failed": 0,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 8428,
+      "mlx-v53": 8459,
       "mlx-v52": 0
     },
-    "reviewNeeded": 40532
+    "reviewNeeded": 40542
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "24Gi",
-      "pct": "33%"
+      "avail": "27Gi",
+      "pct": "31%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
