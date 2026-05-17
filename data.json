@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-18 07:59:26 KST",
-  "updated_at_iso": "2026-05-18T07:59:26.460188+09:00",
+  "updated_at_kst": "2026-05-18 08:29:38 KST",
+  "updated_at_iso": "2026-05-18T08:29:38.960368+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -27,8 +27,8 @@
     {
       "name": "B100",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 45,
+      "pct": 2.1,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -38,8 +38,8 @@
     {
       "name": "B101",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 45,
+      "pct": 2.1,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -49,8 +49,8 @@
     {
       "name": "B102",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 40,
+      "pct": 1.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -60,8 +60,8 @@
     {
       "name": "B103",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 40,
+      "pct": 1.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -71,8 +71,8 @@
     {
       "name": "B104",
       "total": 2163,
-      "done": 0,
-      "pct": 0.0,
+      "done": 40,
+      "pct": 1.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -1116,8 +1116,8 @@
     {
       "name": "B97",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 38,
+      "pct": 1.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -1127,8 +1127,8 @@
     {
       "name": "B98",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 44,
+      "pct": 2.0,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -1138,8 +1138,8 @@
     {
       "name": "B99",
       "total": 2170,
-      "done": 0,
-      "pct": 0.0,
+      "done": 39,
+      "pct": 1.8,
       "speed_sec": null,
       "eta_min": null,
       "errors": 0,
@@ -1149,8 +1149,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 544441,
-      "pending": 301,
+      "analyzed": 544474,
+      "pending": 268,
       "queued_codex": 0,
       "metadata": 98864,
       "skipped": 440,
@@ -1159,10 +1159,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 9487,
+      "mlx-v53": 9520,
       "mlx-v52": 0
     },
-    "reviewNeeded": 40837
+    "reviewNeeded": 40847
   },
   "daily_runs": [],
   "system": {
