@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-19 12:05:56 KST",
-  "updated_at_iso": "2026-05-19T12:05:56.376515+09:00",
+  "updated_at_kst": "2026-05-19 12:36:12 KST",
+  "updated_at_iso": "2026-05-19T12:36:12.074549+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -82,10 +82,10 @@
     {
       "name": "B105",
       "total": 10000,
-      "done": 678,
-      "pct": 6.8,
-      "speed_sec": 31.0,
-      "eta_min": 4829,
+      "done": 734,
+      "pct": 7.3,
+      "speed_sec": 31.1,
+      "eta_min": 4826,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -93,10 +93,10 @@
     {
       "name": "B106",
       "total": 10000,
-      "done": 684,
-      "pct": 6.8,
-      "speed_sec": 30.6,
-      "eta_min": 4762,
+      "done": 740,
+      "pct": 7.4,
+      "speed_sec": 30.8,
+      "eta_min": 4780,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -104,10 +104,10 @@
     {
       "name": "B107",
       "total": 10000,
-      "done": 661,
-      "pct": 6.6,
-      "speed_sec": 31.8,
-      "eta_min": 4950,
+      "done": 713,
+      "pct": 7.1,
+      "speed_sec": 32.1,
+      "eta_min": 4972,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -115,10 +115,10 @@
     {
       "name": "B108",
       "total": 10000,
-      "done": 651,
-      "pct": 6.5,
-      "speed_sec": 32.3,
-      "eta_min": 5038,
+      "done": 703,
+      "pct": 7.0,
+      "speed_sec": 32.5,
+      "eta_min": 5043,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -126,10 +126,10 @@
     {
       "name": "B109",
       "total": 10000,
-      "done": 658,
-      "pct": 6.6,
-      "speed_sec": 32.0,
-      "eta_min": 4981,
+      "done": 708,
+      "pct": 7.1,
+      "speed_sec": 32.3,
+      "eta_min": 5011,
       "errors": 1,
       "timeouts": 1,
       "active": false
@@ -148,10 +148,10 @@
     {
       "name": "B110",
       "total": 10000,
-      "done": 684,
-      "pct": 6.8,
-      "speed_sec": 30.7,
-      "eta_min": 4784,
+      "done": 738,
+      "pct": 7.4,
+      "speed_sec": 30.8,
+      "eta_min": 4777,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -159,10 +159,10 @@
     {
       "name": "B111",
       "total": 10000,
-      "done": 655,
-      "pct": 6.6,
-      "speed_sec": 32.1,
-      "eta_min": 5010,
+      "done": 714,
+      "pct": 7.1,
+      "speed_sec": 32.0,
+      "eta_min": 4965,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -170,10 +170,10 @@
     {
       "name": "B112",
       "total": 10000,
-      "done": 652,
-      "pct": 6.5,
+      "done": 707,
+      "pct": 7.1,
       "speed_sec": 32.3,
-      "eta_min": 5037,
+      "eta_min": 5012,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -1258,7 +1258,7 @@
       "total": "228Gi",
       "used": "12Gi",
       "avail": "25Gi",
-      "pct": "32%"
+      "pct": "33%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
