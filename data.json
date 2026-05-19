@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-19 10:04:49 KST",
-  "updated_at_iso": "2026-05-19T10:04:49.523050+09:00",
+  "updated_at_kst": "2026-05-19 10:35:06 KST",
+  "updated_at_iso": "2026-05-19T10:35:06.968632+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -82,10 +82,10 @@
     {
       "name": "B105",
       "total": 10000,
-      "done": 461,
-      "pct": 4.6,
-      "speed_sec": 29.8,
-      "eta_min": 4745,
+      "done": 519,
+      "pct": 5.2,
+      "speed_sec": 30.1,
+      "eta_min": 4771,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -93,10 +93,10 @@
     {
       "name": "B106",
       "total": 10000,
-      "done": 463,
-      "pct": 4.6,
-      "speed_sec": 29.4,
-      "eta_min": 4681,
+      "done": 524,
+      "pct": 5.2,
+      "speed_sec": 29.7,
+      "eta_min": 4710,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -104,10 +104,10 @@
     {
       "name": "B107",
       "total": 10000,
-      "done": 445,
-      "pct": 4.5,
-      "speed_sec": 30.4,
-      "eta_min": 4870,
+      "done": 500,
+      "pct": 5.0,
+      "speed_sec": 31.0,
+      "eta_min": 4926,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -115,10 +115,10 @@
     {
       "name": "B108",
       "total": 10000,
-      "done": 448,
-      "pct": 4.5,
-      "speed_sec": 30.5,
-      "eta_min": 4886,
+      "done": 504,
+      "pct": 5.0,
+      "speed_sec": 30.9,
+      "eta_min": 4900,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -126,10 +126,10 @@
     {
       "name": "B109",
       "total": 10000,
-      "done": 454,
-      "pct": 4.5,
-      "speed_sec": 30.3,
-      "eta_min": 4830,
+      "done": 510,
+      "pct": 5.1,
+      "speed_sec": 30.5,
+      "eta_min": 4834,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -148,10 +148,10 @@
     {
       "name": "B110",
       "total": 10000,
-      "done": 459,
-      "pct": 4.6,
-      "speed_sec": 30.0,
-      "eta_min": 4777,
+      "done": 518,
+      "pct": 5.2,
+      "speed_sec": 30.2,
+      "eta_min": 4779,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -159,10 +159,10 @@
     {
       "name": "B111",
       "total": 10000,
-      "done": 444,
-      "pct": 4.4,
-      "speed_sec": 31.0,
-      "eta_min": 4955,
+      "done": 499,
+      "pct": 5.0,
+      "speed_sec": 31.2,
+      "eta_min": 4964,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -170,10 +170,10 @@
     {
       "name": "B112",
       "total": 10000,
-      "done": 440,
-      "pct": 4.4,
-      "speed_sec": 31.0,
-      "eta_min": 4965,
+      "done": 499,
+      "pct": 5.0,
+      "speed_sec": 31.3,
+      "eta_min": 4981,
       "errors": 0,
       "timeouts": 0,
       "active": false
@@ -1237,8 +1237,8 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 545148,
-      "pending": 97,
+      "analyzed": 545170,
+      "pending": 75,
       "queued_codex": 0,
       "metadata": 98835,
       "skipped": 461,
@@ -1247,10 +1247,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 10147,
+      "mlx-v53": 10169,
       "mlx-v52": 0
     },
-    "reviewNeeded": 41072
+    "reviewNeeded": 41083
   },
   "daily_runs": [],
   "system": {
