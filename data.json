@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-21 08:22:45 KST",
-  "updated_at_iso": "2026-05-21T08:22:45.199311+09:00",
+  "updated_at_kst": "2026-05-21 09:45:21 KST",
+  "updated_at_iso": "2026-05-21T09:45:21.255781+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -84,9 +84,9 @@
       "total": 10000,
       "done": 5348,
       "pct": 53.5,
-      "speed_sec": 32.6,
-      "eta_min": 2446,
-      "errors": 152,
+      "speed_sec": 32.7,
+      "eta_min": 2367,
+      "errors": 302,
       "timeouts": 1,
       "active": false
     },
@@ -96,8 +96,8 @@
       "done": 5230,
       "pct": 52.3,
       "speed_sec": 33.3,
-      "eta_min": 2553,
-      "errors": 171,
+      "eta_min": 2471,
+      "errors": 321,
       "timeouts": 5,
       "active": false
     },
@@ -106,9 +106,9 @@
       "total": 10000,
       "done": 5267,
       "pct": 52.7,
-      "speed_sec": 33.1,
-      "eta_min": 2541,
-      "errors": 135,
+      "speed_sec": 33.2,
+      "eta_min": 2460,
+      "errors": 285,
       "timeouts": 4,
       "active": false
     },
@@ -117,9 +117,9 @@
       "total": 10000,
       "done": 5275,
       "pct": 52.8,
-      "speed_sec": 33.0,
-      "eta_min": 2505,
-      "errors": 176,
+      "speed_sec": 33.1,
+      "eta_min": 2425,
+      "errors": 326,
       "timeouts": 5,
       "active": false
     },
@@ -129,8 +129,8 @@
       "done": 5184,
       "pct": 51.8,
       "speed_sec": 33.6,
-      "eta_min": 2604,
-      "errors": 167,
+      "eta_min": 2521,
+      "errors": 317,
       "timeouts": 5,
       "active": false
     },
@@ -151,8 +151,8 @@
       "done": 5255,
       "pct": 52.5,
       "speed_sec": 33.2,
-      "eta_min": 2542,
-      "errors": 146,
+      "eta_min": 2461,
+      "errors": 296,
       "timeouts": 4,
       "active": false
     },
@@ -162,8 +162,8 @@
       "done": 5164,
       "pct": 51.6,
       "speed_sec": 33.7,
-      "eta_min": 2643,
-      "errors": 137,
+      "eta_min": 2559,
+      "errors": 287,
       "timeouts": 3,
       "active": false
     },
@@ -173,8 +173,8 @@
       "done": 5207,
       "pct": 52.1,
       "speed_sec": 33.5,
-      "eta_min": 2594,
-      "errors": 143,
+      "eta_min": 2511,
+      "errors": 293,
       "timeouts": 1,
       "active": false
     },
