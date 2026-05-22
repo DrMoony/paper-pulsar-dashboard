@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-22 10:11:18 KST",
-  "updated_at_iso": "2026-05-22T10:11:18.066473+09:00",
+  "updated_at_kst": "2026-05-22 11:33:07 KST",
+  "updated_at_iso": "2026-05-22T11:33:07.644192+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -85,8 +85,8 @@
       "done": 5348,
       "pct": 53.5,
       "speed_sec": 33.1,
-      "eta_min": 966,
-      "errors": 2902,
+      "eta_min": 911,
+      "errors": 3002,
       "timeouts": 1,
       "active": false
     },
@@ -96,8 +96,8 @@
       "done": 5230,
       "pct": 52.3,
       "speed_sec": 33.6,
-      "eta_min": 1064,
-      "errors": 2871,
+      "eta_min": 980,
+      "errors": 3021,
       "timeouts": 5,
       "active": false
     },
@@ -107,8 +107,8 @@
       "done": 5268,
       "pct": 52.7,
       "speed_sec": 33.5,
-      "eta_min": 1033,
-      "errors": 2884,
+      "eta_min": 949,
+      "errors": 3034,
       "timeouts": 4,
       "active": false
     },
@@ -118,8 +118,8 @@
       "done": 5275,
       "pct": 52.8,
       "speed_sec": 33.4,
-      "eta_min": 1030,
-      "errors": 2876,
+      "eta_min": 947,
+      "errors": 3026,
       "timeouts": 5,
       "active": false
     },
@@ -129,8 +129,8 @@
       "done": 5184,
       "pct": 51.8,
       "speed_sec": 33.8,
-      "eta_min": 1098,
-      "errors": 2867,
+      "eta_min": 1014,
+      "errors": 3017,
       "timeouts": 5,
       "active": false
     },
@@ -151,8 +151,8 @@
       "done": 5255,
       "pct": 52.5,
       "speed_sec": 33.5,
-      "eta_min": 1033,
-      "errors": 2896,
+      "eta_min": 949,
+      "errors": 3046,
       "timeouts": 4,
       "active": false
     },
@@ -162,8 +162,8 @@
       "done": 5164,
       "pct": 51.6,
       "speed_sec": 33.9,
-      "eta_min": 1102,
-      "errors": 2887,
+      "eta_min": 1017,
+      "errors": 3037,
       "timeouts": 4,
       "active": false
     },
@@ -173,8 +173,8 @@
       "done": 5207,
       "pct": 52.1,
       "speed_sec": 33.7,
-      "eta_min": 1067,
-      "errors": 2893,
+      "eta_min": 983,
+      "errors": 3043,
       "timeouts": 1,
       "active": false
     },
