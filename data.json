@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-24 08:25:20 KST",
-  "updated_at_iso": "2026-05-24T08:25:20.073804+09:00",
+  "updated_at_kst": "2026-05-24 08:56:21 KST",
+  "updated_at_iso": "2026-05-24T08:56:21.907612+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -184,8 +184,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -195,8 +195,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -206,8 +206,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -217,8 +217,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -228,8 +228,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -239,8 +239,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -250,8 +250,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 6000,
       "timeouts": 1,
       "active": false
     },
@@ -272,8 +272,8 @@
       "done": 0,
       "pct": 0.0,
       "speed_sec": 0.2,
-      "eta_min": 3,
-      "errors": 4850,
+      "eta_min": 0,
+      "errors": 5950,
       "timeouts": 1,
       "active": false
     },
@@ -1325,10 +1325,10 @@
   ],
   "firestore": {
     "status": {
-      "analyzed": 571723,
+      "analyzed": 578118,
       "pending": 578,
       "queued_codex": 0,
-      "metadata": 73235,
+      "metadata": 66840,
       "skipped": 490,
       "failed": 0,
       "summarizing": 0
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "26Gi",
-      "pct": "31%"
+      "avail": "1.0Gi",
+      "pct": "93%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
