@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-24 11:33:57 KST",
-  "updated_at_iso": "2026-05-24T11:33:57.959475+09:00",
+  "updated_at_kst": "2026-05-24 12:36:57 KST",
+  "updated_at_iso": "2026-05-24T12:36:57.569869+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,34 +181,34 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 172,
-      "pct": 2.9,
-      "speed_sec": 43.9,
-      "eta_min": 4279,
-      "errors": 2,
-      "timeouts": 3,
+      "done": 249,
+      "pct": 4.1,
+      "speed_sec": 46.3,
+      "eta_min": 4433,
+      "errors": 5,
+      "timeouts": 5,
       "active": false
     },
     {
       "name": "B114",
       "total": 6001,
-      "done": 175,
-      "pct": 2.9,
-      "speed_sec": 45.0,
-      "eta_min": 4392,
+      "done": 254,
+      "pct": 4.2,
+      "speed_sec": 44.9,
+      "eta_min": 4301,
       "errors": 2,
-      "timeouts": 2,
+      "timeouts": 3,
       "active": false
     },
     {
       "name": "B115",
       "total": 6001,
-      "done": 169,
-      "pct": 2.8,
-      "speed_sec": 43.6,
-      "eta_min": 4252,
-      "errors": 2,
-      "timeouts": 4,
+      "done": 240,
+      "pct": 4.0,
+      "speed_sec": 46.7,
+      "eta_min": 4513,
+      "errors": 5,
+      "timeouts": 7,
       "active": false
     },
     {
@@ -225,34 +225,34 @@
     {
       "name": "B117",
       "total": 6001,
-      "done": 167,
-      "pct": 2.8,
-      "speed_sec": 45.2,
-      "eta_min": 4405,
-      "errors": 3,
+      "done": 252,
+      "pct": 4.2,
+      "speed_sec": 45.5,
+      "eta_min": 4360,
+      "errors": 4,
       "timeouts": 4,
       "active": false
     },
     {
       "name": "B118",
       "total": 6001,
-      "done": 171,
-      "pct": 2.8,
-      "speed_sec": 46.0,
-      "eta_min": 4481,
-      "errors": 2,
-      "timeouts": 2,
+      "done": 244,
+      "pct": 4.1,
+      "speed_sec": 46.5,
+      "eta_min": 4497,
+      "errors": 3,
+      "timeouts": 4,
       "active": false
     },
     {
       "name": "B119",
       "total": 6001,
-      "done": 181,
-      "pct": 3.0,
-      "speed_sec": 42.6,
-      "eta_min": 4150,
-      "errors": 1,
-      "timeouts": 1,
+      "done": 256,
+      "pct": 4.3,
+      "speed_sec": 45.2,
+      "eta_min": 4334,
+      "errors": 2,
+      "timeouts": 2,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 159,
-      "pct": 2.7,
-      "speed_sec": 49.1,
-      "eta_min": 4783,
+      "done": 233,
+      "pct": 3.9,
+      "speed_sec": 49.0,
+      "eta_min": 4735,
       "errors": 4,
-      "timeouts": 4,
+      "timeouts": 5,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "1.7Gi",
-      "pct": "88%"
+      "avail": "3.8Gi",
+      "pct": "76%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
