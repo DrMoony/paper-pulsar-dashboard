@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-24 23:09:18 KST",
-  "updated_at_iso": "2026-05-24T23:09:18.732476+09:00",
+  "updated_at_kst": "2026-05-24 23:40:18 KST",
+  "updated_at_iso": "2026-05-24T23:40:18.335059+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,21 +192,21 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 989,
-      "pct": 16.5,
-      "speed_sec": 49.5,
-      "eta_min": 4167,
+      "done": 1019,
+      "pct": 17.0,
+      "speed_sec": 49.7,
+      "eta_min": 4145,
       "errors": 11,
-      "timeouts": 11,
+      "timeouts": 12,
       "active": false
     },
     {
       "name": "B115",
       "total": 6001,
-      "done": 951,
-      "pct": 15.8,
-      "speed_sec": 51.3,
-      "eta_min": 4316,
+      "done": 987,
+      "pct": 16.4,
+      "speed_sec": 51.2,
+      "eta_min": 4270,
       "errors": 20,
       "timeouts": 20,
       "active": false
@@ -225,8 +225,8 @@
     {
       "name": "B117",
       "total": 6001,
-      "done": 941,
-      "pct": 15.7,
+      "done": 976,
+      "pct": 16.3,
       "speed_sec": 51.8,
       "eta_min": 4357,
       "errors": 21,
@@ -247,12 +247,12 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 938,
-      "pct": 15.6,
+      "done": 962,
+      "pct": 16.0,
       "speed_sec": 52.0,
       "eta_min": 4375,
       "errors": 20,
-      "timeouts": 20,
+      "timeouts": 23,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 910,
-      "pct": 15.2,
-      "speed_sec": 53.1,
-      "eta_min": 4511,
-      "errors": 21,
-      "timeouts": 22,
+      "done": 942,
+      "pct": 15.7,
+      "speed_sec": 53.5,
+      "eta_min": 4499,
+      "errors": 23,
+      "timeouts": 23,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "15Gi",
-      "pct": "44%"
+      "avail": "5.2Gi",
+      "pct": "69%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
