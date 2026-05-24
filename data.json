@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-25 03:51:03 KST",
-  "updated_at_iso": "2026-05-25T03:51:03.606223+09:00",
+  "updated_at_kst": "2026-05-25 04:22:14 KST",
+  "updated_at_iso": "2026-05-25T04:22:14.714631+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,23 +192,23 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 1279,
-      "pct": 21.3,
+      "done": 1315,
+      "pct": 21.9,
       "speed_sec": 51.1,
       "eta_min": 4002,
       "errors": 25,
-      "timeouts": 25,
+      "timeouts": 27,
       "active": false
     },
     {
       "name": "B115",
       "total": 6001,
-      "done": 1272,
-      "pct": 21.2,
-      "speed_sec": 51.3,
-      "eta_min": 4062,
-      "errors": 26,
-      "timeouts": 27,
+      "done": 1309,
+      "pct": 21.8,
+      "speed_sec": 51.2,
+      "eta_min": 4015,
+      "errors": 27,
+      "timeouts": 28,
       "active": false
     },
     {
@@ -247,12 +247,12 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 1256,
-      "pct": 20.9,
+      "done": 1292,
+      "pct": 21.5,
       "speed_sec": 51.9,
-      "eta_min": 4112,
-      "errors": 28,
-      "timeouts": 29,
+      "eta_min": 4067,
+      "errors": 30,
+      "timeouts": 30,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 1218,
-      "pct": 20.3,
+      "done": 1256,
+      "pct": 20.9,
       "speed_sec": 53.2,
       "eta_min": 4213,
       "errors": 32,
-      "timeouts": 32,
+      "timeouts": 33,
       "active": false
     },
     {
@@ -1326,10 +1326,10 @@
   "firestore": {
     "status": {
       "analyzed": 578118,
-      "pending": 2887,
+      "pending": 2822,
       "queued_codex": 0,
       "metadata": 66840,
-      "skipped": 493,
+      "skipped": 558,
       "failed": 0,
       "summarizing": 0
     },
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "514Mi",
-      "pct": "96%"
+      "avail": "350Mi",
+      "pct": "98%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
