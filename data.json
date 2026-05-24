@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-24 14:44:20 KST",
-  "updated_at_iso": "2026-05-24T14:44:20.782172+09:00",
+  "updated_at_kst": "2026-05-24 15:14:52 KST",
+  "updated_at_iso": "2026-05-24T15:14:52.149977+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,10 +192,10 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 411,
-      "pct": 6.8,
-      "speed_sec": 46.6,
-      "eta_min": 4352,
+      "done": 448,
+      "pct": 7.5,
+      "speed_sec": 46.9,
+      "eta_min": 4342,
       "errors": 5,
       "timeouts": 5,
       "active": false
@@ -203,8 +203,8 @@
     {
       "name": "B115",
       "total": 6001,
-      "done": 398,
-      "pct": 6.6,
+      "done": 436,
+      "pct": 7.3,
       "speed_sec": 47.6,
       "eta_min": 4446,
       "errors": 10,
@@ -225,34 +225,34 @@
     {
       "name": "B117",
       "total": 6001,
-      "done": 393,
-      "pct": 6.5,
+      "done": 428,
+      "pct": 7.1,
       "speed_sec": 48.0,
       "eta_min": 4480,
       "errors": 10,
-      "timeouts": 10,
+      "timeouts": 11,
       "active": false
     },
     {
       "name": "B118",
       "total": 6001,
-      "done": 382,
-      "pct": 6.4,
-      "speed_sec": 49.3,
-      "eta_min": 4639,
-      "errors": 8,
-      "timeouts": 9,
+      "done": 416,
+      "pct": 6.9,
+      "speed_sec": 49.5,
+      "eta_min": 4619,
+      "errors": 9,
+      "timeouts": 10,
       "active": false
     },
     {
       "name": "B119",
       "total": 6001,
-      "done": 400,
-      "pct": 6.7,
+      "done": 429,
+      "pct": 7.1,
       "speed_sec": 47.9,
       "eta_min": 4467,
       "errors": 6,
-      "timeouts": 6,
+      "timeouts": 8,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 387,
-      "pct": 6.5,
-      "speed_sec": 49.4,
-      "eta_min": 4648,
+      "done": 422,
+      "pct": 7.0,
+      "speed_sec": 49.1,
+      "eta_min": 4584,
       "errors": 6,
-      "timeouts": 6,
+      "timeouts": 7,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "4.8Gi",
-      "pct": "71%"
+      "avail": "5.4Gi",
+      "pct": "69%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
