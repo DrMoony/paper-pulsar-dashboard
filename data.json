@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-25 02:48:07 KST",
-  "updated_at_iso": "2026-05-25T02:48:07.054810+09:00",
+  "updated_at_kst": "2026-05-25 03:19:50 KST",
+  "updated_at_iso": "2026-05-25T03:19:50.481303+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,23 +192,23 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 1211,
-      "pct": 20.2,
-      "speed_sec": 50.8,
-      "eta_min": 4066,
-      "errors": 19,
-      "timeouts": 22,
+      "done": 1246,
+      "pct": 20.8,
+      "speed_sec": 51.1,
+      "eta_min": 4050,
+      "errors": 23,
+      "timeouts": 23,
       "active": false
     },
     {
       "name": "B115",
       "total": 6001,
-      "done": 1203,
-      "pct": 20.0,
-      "speed_sec": 51.2,
-      "eta_min": 4097,
-      "errors": 24,
-      "timeouts": 25,
+      "done": 1233,
+      "pct": 20.5,
+      "speed_sec": 51.3,
+      "eta_min": 4062,
+      "errors": 26,
+      "timeouts": 27,
       "active": false
     },
     {
@@ -247,8 +247,8 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 1182,
-      "pct": 19.7,
+      "done": 1219,
+      "pct": 20.3,
       "speed_sec": 52.0,
       "eta_min": 4164,
       "errors": 28,
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 1149,
-      "pct": 19.2,
-      "speed_sec": 53.5,
-      "eta_min": 4322,
-      "errors": 29,
-      "timeouts": 29,
+      "done": 1185,
+      "pct": 19.8,
+      "speed_sec": 53.4,
+      "eta_min": 4266,
+      "errors": 30,
+      "timeouts": 30,
       "active": false
     },
     {
@@ -1326,7 +1326,7 @@
   "firestore": {
     "status": {
       "analyzed": 578118,
-      "pending": 578,
+      "pending": 2890,
       "queued_codex": 0,
       "metadata": 66840,
       "skipped": 490,
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "4.3Gi",
-      "pct": "73%"
+      "avail": "1.6Gi",
+      "pct": "88%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
