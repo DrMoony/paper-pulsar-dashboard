@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-24 23:40:18 KST",
-  "updated_at_iso": "2026-05-24T23:40:18.335059+09:00",
+  "updated_at_kst": "2026-05-25 00:10:46 KST",
+  "updated_at_iso": "2026-05-25T00:10:46.307587+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -192,23 +192,23 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 1019,
-      "pct": 17.0,
-      "speed_sec": 49.7,
-      "eta_min": 4145,
-      "errors": 11,
-      "timeouts": 12,
+      "done": 1048,
+      "pct": 17.5,
+      "speed_sec": 50.3,
+      "eta_min": 4149,
+      "errors": 13,
+      "timeouts": 13,
       "active": false
     },
     {
       "name": "B115",
       "total": 6001,
-      "done": 987,
-      "pct": 16.4,
+      "done": 1021,
+      "pct": 17.0,
       "speed_sec": 51.2,
       "eta_min": 4270,
       "errors": 20,
-      "timeouts": 20,
+      "timeouts": 21,
       "active": false
     },
     {
@@ -225,10 +225,10 @@
     {
       "name": "B117",
       "total": 6001,
-      "done": 976,
-      "pct": 16.3,
-      "speed_sec": 51.8,
-      "eta_min": 4357,
+      "done": 1010,
+      "pct": 16.8,
+      "speed_sec": 51.9,
+      "eta_min": 4322,
       "errors": 21,
       "timeouts": 21,
       "active": false
@@ -247,12 +247,12 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 962,
-      "pct": 16.0,
-      "speed_sec": 52.0,
-      "eta_min": 4375,
-      "errors": 20,
-      "timeouts": 23,
+      "done": 992,
+      "pct": 16.5,
+      "speed_sec": 52.5,
+      "eta_min": 4374,
+      "errors": 23,
+      "timeouts": 24,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 942,
-      "pct": 15.7,
+      "done": 972,
+      "pct": 16.2,
       "speed_sec": 53.5,
       "eta_min": 4499,
       "errors": 23,
-      "timeouts": 23,
+      "timeouts": 24,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "5.2Gi",
-      "pct": "69%"
+      "avail": "3.1Gi",
+      "pct": "79%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
