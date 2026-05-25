@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-25 14:25:33 KST",
-  "updated_at_iso": "2026-05-25T14:25:33.738187+09:00",
+  "updated_at_kst": "2026-05-25 14:58:27 KST",
+  "updated_at_iso": "2026-05-25T14:58:27.792143+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,8 +181,8 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 534,
-      "pct": 8.9,
+      "done": 558,
+      "pct": 9.3,
       "speed_sec": 76.4,
       "eta_min": 6953,
       "errors": 1,
@@ -192,10 +192,10 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 1954,
-      "pct": 32.6,
-      "speed_sec": 52.0,
-      "eta_min": 3512,
+      "done": 1978,
+      "pct": 33.0,
+      "speed_sec": 52.6,
+      "eta_min": 3509,
       "errors": 39,
       "timeouts": 39,
       "active": false
@@ -203,8 +203,8 @@
     {
       "name": "B115",
       "total": 6001,
-      "done": 1931,
-      "pct": 32.2,
+      "done": 1956,
+      "pct": 32.6,
       "speed_sec": 52.7,
       "eta_min": 3557,
       "errors": 45,
@@ -214,19 +214,19 @@
     {
       "name": "B116",
       "total": 6001,
-      "done": 224,
-      "pct": 3.7,
-      "speed_sec": 79.9,
-      "eta_min": 7748,
-      "errors": 2,
+      "done": 249,
+      "pct": 4.1,
+      "speed_sec": 78.2,
+      "eta_min": 7526,
+      "errors": 3,
       "timeouts": 4,
       "active": false
     },
     {
       "name": "B117",
       "total": 6001,
-      "done": 1080,
-      "pct": 18.0,
+      "done": 1090,
+      "pct": 18.2,
       "speed_sec": 52.0,
       "eta_min": 4290,
       "errors": 22,
@@ -236,23 +236,23 @@
     {
       "name": "B118",
       "total": 6001,
-      "done": 963,
-      "pct": 16.0,
-      "speed_sec": 79.1,
-      "eta_min": 6688,
+      "done": 983,
+      "pct": 16.4,
+      "speed_sec": 78.0,
+      "eta_min": 6531,
       "errors": 2,
-      "timeouts": 17,
+      "timeouts": 18,
       "active": false
     },
     {
       "name": "B119",
       "total": 6001,
-      "done": 1929,
-      "pct": 32.1,
+      "done": 1950,
+      "pct": 32.5,
       "speed_sec": 52.7,
       "eta_min": 3560,
       "errors": 45,
-      "timeouts": 45,
+      "timeouts": 46,
       "active": false
     },
     {
@@ -269,8 +269,8 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 1859,
-      "pct": 31.0,
+      "done": 1883,
+      "pct": 31.4,
       "speed_sec": 54.4,
       "eta_min": 3718,
       "errors": 54,
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "4.8Gi",
-      "pct": "71%"
+      "avail": "5.5Gi",
+      "pct": "68%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
