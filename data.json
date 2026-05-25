@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-26 02:45:03 KST",
-  "updated_at_iso": "2026-05-26T02:45:03.469626+09:00",
+  "updated_at_kst": "2026-05-26 03:19:39 KST",
+  "updated_at_iso": "2026-05-26T03:19:39.868363+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,21 +181,21 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 1000,
-      "pct": 16.7,
+      "done": 1024,
+      "pct": 17.1,
       "speed_sec": 90.7,
       "eta_min": 7573,
       "errors": 4,
-      "timeouts": 12,
+      "timeouts": 13,
       "active": false
     },
     {
       "name": "B114",
       "total": 6001,
-      "done": 2397,
-      "pct": 39.9,
-      "speed_sec": 60.9,
-      "eta_min": 3657,
+      "done": 2423,
+      "pct": 40.4,
+      "speed_sec": 61.2,
+      "eta_min": 3625,
       "errors": 41,
       "timeouts": 41,
       "active": false
@@ -203,19 +203,19 @@
     {
       "name": "B115",
       "total": 6001,
-      "done": 2363,
-      "pct": 39.4,
+      "done": 2388,
+      "pct": 39.8,
       "speed_sec": 61.7,
       "eta_min": 3701,
       "errors": 53,
-      "timeouts": 53,
+      "timeouts": 54,
       "active": false
     },
     {
       "name": "B116",
       "total": 6001,
-      "done": 693,
-      "pct": 11.5,
+      "done": 721,
+      "pct": 12.0,
       "speed_sec": 90.7,
       "eta_min": 8043,
       "errors": 6,
@@ -236,8 +236,8 @@
     {
       "name": "B118",
       "total": 6001,
-      "done": 1429,
-      "pct": 23.8,
+      "done": 1456,
+      "pct": 24.3,
       "speed_sec": 90.9,
       "eta_min": 6925,
       "errors": 8,
@@ -247,8 +247,8 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 2363,
-      "pct": 39.4,
+      "done": 2388,
+      "pct": 39.8,
       "speed_sec": 61.6,
       "eta_min": 3696,
       "errors": 52,
@@ -269,8 +269,8 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 2295,
-      "pct": 38.3,
+      "done": 2321,
+      "pct": 38.7,
       "speed_sec": 63.3,
       "eta_min": 3847,
       "errors": 60,
@@ -1326,7 +1326,7 @@
   "firestore": {
     "status": {
       "analyzed": 578118,
-      "pending": 2822,
+      "pending": 3228,
       "queued_codex": 0,
       "metadata": 66840,
       "skipped": 558,
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "1.5Gi",
-      "pct": "89%"
+      "avail": "5.8Gi",
+      "pct": "67%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
