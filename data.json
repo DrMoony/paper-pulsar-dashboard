@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-26 07:49:10 KST",
-  "updated_at_iso": "2026-05-26T07:49:10.947881+09:00",
+  "updated_at_kst": "2026-05-26 08:22:30 KST",
+  "updated_at_iso": "2026-05-26T08:22:30.059426+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,10 +181,10 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 1248,
-      "pct": 20.8,
-      "speed_sec": 85.8,
-      "eta_min": 6807,
+      "done": 1283,
+      "pct": 21.4,
+      "speed_sec": 84.3,
+      "eta_min": 6621,
       "errors": 6,
       "timeouts": 14,
       "active": false
@@ -192,12 +192,12 @@
     {
       "name": "B114",
       "total": 6001,
-      "done": 2652,
-      "pct": 44.2,
-      "speed_sec": 62.2,
-      "eta_min": 3476,
+      "done": 2685,
+      "pct": 44.7,
+      "speed_sec": 62.1,
+      "eta_min": 3415,
       "errors": 43,
-      "timeouts": 43,
+      "timeouts": 44,
       "active": false
     },
     {
@@ -214,11 +214,11 @@
     {
       "name": "B116",
       "total": 6001,
-      "done": 947,
-      "pct": 15.8,
-      "speed_sec": 85.5,
-      "eta_min": 7226,
-      "errors": 7,
+      "done": 980,
+      "pct": 16.3,
+      "speed_sec": 84.0,
+      "eta_min": 7032,
+      "errors": 8,
       "timeouts": 9,
       "active": false
     },
@@ -247,12 +247,12 @@
     {
       "name": "B119",
       "total": 6001,
-      "done": 2613,
-      "pct": 43.5,
+      "done": 2640,
+      "pct": 44.0,
       "speed_sec": 62.7,
       "eta_min": 3503,
       "errors": 55,
-      "timeouts": 55,
+      "timeouts": 57,
       "active": false
     },
     {
@@ -269,8 +269,8 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 2539,
-      "pct": 42.3,
+      "done": 2576,
+      "pct": 42.9,
       "speed_sec": 64.2,
       "eta_min": 3638,
       "errors": 67,
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "1.8Gi",
-      "pct": "87%"
+      "avail": "2.7Gi",
+      "pct": "82%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
