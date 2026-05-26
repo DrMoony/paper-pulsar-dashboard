@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-27 01:03:51 KST",
-  "updated_at_iso": "2026-05-27T01:03:51.294822+09:00",
+  "updated_at_kst": "2026-05-27 01:35:27 KST",
+  "updated_at_iso": "2026-05-27T01:35:27.168959+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,12 +181,12 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 2090,
-      "pct": 34.8,
+      "done": 2097,
+      "pct": 34.9,
       "speed_sec": 76.9,
       "eta_min": 4949,
       "errors": 71,
-      "timeouts": 81,
+      "timeouts": 82,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 3426,
-      "pct": 57.1,
-      "speed_sec": 64.7,
-      "eta_min": 2694,
-      "errors": 118,
-      "timeouts": 120,
+      "done": 3448,
+      "pct": 57.5,
+      "speed_sec": 64.8,
+      "eta_min": 2645,
+      "errors": 121,
+      "timeouts": 123,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "4.0Gi",
-      "pct": "75%"
+      "avail": "4.5Gi",
+      "pct": "73%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
