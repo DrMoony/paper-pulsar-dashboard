@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-26 08:55:54 KST",
-  "updated_at_iso": "2026-05-26T08:55:54.646843+09:00",
+  "updated_at_kst": "2026-05-26 09:28:15 KST",
+  "updated_at_iso": "2026-05-26T09:28:15.944382+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -181,23 +181,23 @@
     {
       "name": "B113",
       "total": 6001,
-      "done": 1317,
-      "pct": 21.9,
-      "speed_sec": 84.3,
-      "eta_min": 6621,
+      "done": 1354,
+      "pct": 22.6,
+      "speed_sec": 82.8,
+      "eta_min": 6430,
       "errors": 6,
-      "timeouts": 14,
+      "timeouts": 15,
       "active": false
     },
     {
       "name": "B114",
       "total": 6001,
-      "done": 2717,
-      "pct": 45.3,
+      "done": 2749,
+      "pct": 45.8,
       "speed_sec": 62.0,
       "eta_min": 3360,
       "errors": 44,
-      "timeouts": 45,
+      "timeouts": 47,
       "active": false
     },
     {
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 2610,
-      "pct": 43.5,
-      "speed_sec": 64.0,
-      "eta_min": 3574,
+      "done": 2648,
+      "pct": 44.1,
+      "speed_sec": 63.8,
+      "eta_min": 3508,
       "errors": 67,
-      "timeouts": 67,
+      "timeouts": 68,
       "active": false
     },
     {
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "4.5Gi",
-      "pct": "73%"
+      "avail": "4.7Gi",
+      "pct": "72%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
