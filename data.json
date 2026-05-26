@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-05-27 03:07:29 KST",
-  "updated_at_iso": "2026-05-27T03:07:29.713213+09:00",
+  "updated_at_kst": "2026-05-27 04:10:20 KST",
+  "updated_at_iso": "2026-05-27T04:10:20.641619+09:00",
   "codex_batches": [
     {
       "name": "B1",
@@ -269,12 +269,12 @@
     {
       "name": "B120",
       "total": 5998,
-      "done": 3504,
-      "pct": 58.4,
-      "speed_sec": 65.0,
-      "eta_min": 2598,
-      "errors": 130,
-      "timeouts": 138,
+      "done": 3533,
+      "pct": 58.9,
+      "speed_sec": 65.2,
+      "eta_min": 2553,
+      "errors": 142,
+      "timeouts": 146,
       "active": false
     },
     {
@@ -1326,10 +1326,10 @@
   "firestore": {
     "status": {
       "analyzed": 578118,
-      "pending": 3568,
+      "pending": 3559,
       "queued_codex": 0,
       "metadata": 66840,
-      "skipped": 568,
+      "skipped": 580,
       "failed": 0,
       "summarizing": 0
     },
@@ -1345,8 +1345,8 @@
     "disk": {
       "total": "228Gi",
       "used": "12Gi",
-      "avail": "162Mi",
-      "pct": "99%"
+      "avail": "6.6Gi",
+      "pct": "64%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
