@@ -1,31 +1,31 @@
 {
-  "updated_at_kst": "2026-06-04 04:56:35 KST",
-  "updated_at_iso": "2026-06-04T04:56:35.361739+09:00",
+  "updated_at_kst": "2026-06-04 05:26:42 KST",
+  "updated_at_iso": "2026-06-04T05:26:42.385812+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
-      "analyzed": 627819,
-      "pending": 10553,
+      "analyzed": 630684,
+      "pending": 7688,
       "queued_codex": 0,
-      "metadata": 19038,
+      "metadata": 2062,
       "skipped": 760,
       "failed": 54,
       "summarizing": 0
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 13021,
+      "mlx-v53": 13046,
       "mlx-v52": 0
     },
-    "reviewNeeded": 42206
+    "reviewNeeded": 42227
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "17Gi",
-      "avail": "63Gi",
-      "pct": "21%"
+      "avail": "58Gi",
+      "pct": "23%"
     },
     "mlx_lm_running": true,
     "uvicorn_running": true
