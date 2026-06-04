@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-06-04 10:27:31 KST",
-  "updated_at_iso": "2026-06-04T10:27:31.452264+09:00",
+  "updated_at_kst": "2026-06-04 10:57:35 KST",
+  "updated_at_iso": "2026-06-04T10:57:35.953464+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
@@ -14,17 +14,17 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 13410,
+      "mlx-v53": 13450,
       "mlx-v52": 0
     },
-    "reviewNeeded": 42322
+    "reviewNeeded": 42331
   },
   "daily_runs": [],
   "system": {
     "disk": {
       "total": "228Gi",
       "used": "17Gi",
-      "avail": "63Gi",
+      "avail": "64Gi",
       "pct": "21%"
     },
     "mlx_lm_running": true,
