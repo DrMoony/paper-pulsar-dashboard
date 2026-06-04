@@ -1,11 +1,11 @@
 {
-  "updated_at_kst": "2026-06-04 22:29:29 KST",
-  "updated_at_iso": "2026-06-04T22:29:29.912185+09:00",
+  "updated_at_kst": "2026-06-04 22:59:34 KST",
+  "updated_at_iso": "2026-06-04T22:59:34.962083+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
-      "analyzed": 631508,
-      "pending": 6763,
+      "analyzed": 631549,
+      "pending": 6722,
       "queued_codex": 0,
       "metadata": 2085,
       "skipped": 861,
@@ -14,10 +14,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 14354,
+      "mlx-v53": 14395,
       "mlx-v52": 0
     },
-    "reviewNeeded": 42641
+    "reviewNeeded": 42656
   },
   "daily_runs": [],
   "system": {
