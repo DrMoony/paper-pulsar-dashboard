@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-06-04 11:27:40 KST",
-  "updated_at_iso": "2026-06-04T11:27:40.783553+09:00",
+  "updated_at_kst": "2026-06-04 11:57:46 KST",
+  "updated_at_iso": "2026-06-04T11:57:46.374009+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
@@ -14,10 +14,10 @@
     },
     "categorySource": {
       "retag-flash": 212620,
-      "mlx-v53": 13490,
+      "mlx-v53": 13529,
       "mlx-v52": 0
     },
-    "reviewNeeded": 42338
+    "reviewNeeded": 42353
   },
   "daily_runs": [],
   "system": {
