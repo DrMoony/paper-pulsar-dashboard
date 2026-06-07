@@ -1,13 +1,13 @@
 {
-  "updated_at_kst": "2026-06-07 09:09:47 KST",
-  "updated_at_iso": "2026-06-07T09:09:47.981683+09:00",
+  "updated_at_kst": "2026-06-07 09:39:53 KST",
+  "updated_at_iso": "2026-06-07T09:39:53.474112+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
       "analyzed": 635569,
       "pending": 6233,
       "queued_codex": 0,
-      "metadata": 200682,
+      "metadata": 203941,
       "skipped": 923,
       "failed": 54,
       "summarizing": 0
