@@ -1,11 +1,11 @@
 {
-  "updated_at_kst": "2026-06-10 02:51:38 KST",
-  "updated_at_iso": "2026-06-10T02:51:38.372692+09:00",
+  "updated_at_kst": "2026-06-10 03:21:43 KST",
+  "updated_at_iso": "2026-06-10T03:21:43.840556+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
       "analyzed": 643855,
-      "pending": 26,
+      "pending": 664,
       "queued_codex": 0,
       "metadata": 252642,
       "skipped": 964,
@@ -24,7 +24,7 @@
     "disk": {
       "total": "228Gi",
       "used": "17Gi",
-      "avail": "61Gi",
+      "avail": "62Gi",
       "pct": "22%"
     },
     "mlx_lm_running": true,
