@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "2026-06-27 01:41:58 KST",
-  "updated_at_iso": "2026-06-27T01:41:58.374240+09:00",
+  "updated_at_kst": "2026-06-27 02:12:03 KST",
+  "updated_at_iso": "2026-06-27T02:12:03.842482+09:00",
   "codex_batches": [],
   "firestore": {
     "status": {
@@ -24,7 +24,7 @@
     "disk": {
       "total": "228Gi",
       "used": "17Gi",
-      "avail": "39Gi",
+      "avail": "38Gi",
       "pct": "31%"
     },
     "mlx_lm_running": true,
